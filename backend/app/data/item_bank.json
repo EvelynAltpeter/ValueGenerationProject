@@ -1,0 +1,37 @@
+[
+  {
+    "questionId": "py-easy-1",
+    "trackId": "python_core_v1",
+    "prompt": "Which data structure preserves insertion order in Python 3.7+?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": ["basics"],
+    "subskill": "data_structures",
+    "options": ["set", "dict", "tuple", "frozenset"],
+    "answerKey": "dict",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-medium-1",
+    "trackId": "python_core_v1",
+    "prompt": "What is the time complexity of looking up a key in a Python dict on average?",
+    "questionType": "mcq",
+    "difficulty": "medium",
+    "tags": ["algorithms"],
+    "subskill": "algorithms",
+    "options": ["O(log n)", "O(1)", "O(n)", "O(n log n)"],
+    "answerKey": "O(1)",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-hard-1",
+    "trackId": "python_core_v1",
+    "prompt": "Implement a function `two_sum(nums, target)` that returns indices of two numbers summing to target.",
+    "questionType": "coding",
+    "difficulty": "hard",
+    "tags": ["algorithms", "hashmap"],
+    "subskill": "code_quality",
+    "referenceSolution": "def two_sum(nums, target):\n    seen = {}\n    for i, n in enumerate(nums):\n        if target - n in seen:\n            return [seen[target - n], i]\n        seen[n] = i",
+    "timeLimitSeconds": 600
+  }
+]

@@ -1,0 +1,19 @@
+{"timestamp": "2025-11-21T17:52:04.164948+00:00", "eventType": "candidate.created", "actorId": "cand-4596ffe7", "payload": {"email": "evelyn@example.com"}}
+{"timestamp": "2025-11-21T17:52:04.168356+00:00", "eventType": "session.created", "actorId": "cand-4596ffe7", "payload": {"sessionId": "sess-8530a879", "trackId": "python_core_v1"}}
+{"timestamp": "2025-11-21T17:52:04.169669+00:00", "eventType": "session.question_assigned", "actorId": "cand-4596ffe7", "payload": {"sessionId": "sess-8530a879", "questionId": "py-medium-1", "band": "medium"}}
+{"timestamp": "2025-11-21T17:52:04.171526+00:00", "eventType": "session.response_recorded", "actorId": "cand-4596ffe7", "payload": {"sessionId": "sess-8530a879", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}}
+{"timestamp": "2025-11-21T17:52:04.172612+00:00", "eventType": "session.scored", "actorId": "cand-4596ffe7", "payload": {"sessionId": "sess-8530a879", "overall": "0", "percentile": "50"}}
+{"timestamp": "2025-11-21T17:52:58.202293+00:00", "eventType": "candidate.created", "actorId": "cand-7ae05319", "payload": {"email": "evelyn@example.com"}}
+{"timestamp": "2025-11-21T17:52:58.204679+00:00", "eventType": "session.created", "actorId": "cand-7ae05319", "payload": {"sessionId": "sess-6eda58f1", "trackId": "python_core_v1"}}
+{"timestamp": "2025-11-21T17:52:58.206318+00:00", "eventType": "session.question_assigned", "actorId": "cand-7ae05319", "payload": {"sessionId": "sess-6eda58f1", "questionId": "py-medium-1", "band": "medium"}}
+{"timestamp": "2025-11-21T17:52:58.208716+00:00", "eventType": "session.response_recorded", "actorId": "cand-7ae05319", "payload": {"sessionId": "sess-6eda58f1", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}}
+{"timestamp": "2025-11-21T17:52:58.209869+00:00", "eventType": "session.scored", "actorId": "cand-7ae05319", "payload": {"sessionId": "sess-6eda58f1", "overall": "0", "percentile": "50"}}
+{"timestamp": "2025-11-21T18:05:18.513908+00:00", "eventType": "candidate.created", "actorId": "cand-e60819b0", "payload": {"email": "jetulven@yahoo.com"}}
+{"timestamp": "2025-11-21T18:05:23.589449+00:00", "eventType": "session.created", "actorId": "cand-e60819b0", "payload": {"sessionId": "sess-c763dcde", "trackId": "python_core_v1"}}
+{"timestamp": "2025-11-21T18:05:23.596790+00:00", "eventType": "session.question_assigned", "actorId": "cand-e60819b0", "payload": {"sessionId": "sess-c763dcde", "questionId": "py-medium-1", "band": "medium"}}
+{"timestamp": "2025-11-21T18:05:29.756477+00:00", "eventType": "session.response_recorded", "actorId": "cand-e60819b0", "payload": {"sessionId": "sess-c763dcde", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}}
+{"timestamp": "2025-11-21T18:05:29.764724+00:00", "eventType": "session.question_assigned", "actorId": "cand-e60819b0", "payload": {"sessionId": "sess-c763dcde", "questionId": "py-easy-1", "band": "easy"}}
+{"timestamp": "2025-11-21T18:05:44.568634+00:00", "eventType": "session.response_recorded", "actorId": "cand-e60819b0", "payload": {"sessionId": "sess-c763dcde", "questionId": "py-easy-1", "correct": "False", "nextBand": "easy"}}
+{"timestamp": "2025-11-21T18:05:44.587112+00:00", "eventType": "session.question_assigned", "actorId": "cand-e60819b0", "payload": {"sessionId": "sess-c763dcde", "questionId": "py-hard-1", "band": "hard"}}
+{"timestamp": "2025-11-21T18:05:58.388044+00:00", "eventType": "session.response_recorded", "actorId": "cand-e60819b0", "payload": {"sessionId": "sess-c763dcde", "questionId": "py-hard-1", "correct": "False", "nextBand": "medium"}}
+{"timestamp": "2025-11-21T18:06:27.826848+00:00", "eventType": "employer.created", "actorId": "emp-f5749a0e", "payload": {"name": "Mag7"}}

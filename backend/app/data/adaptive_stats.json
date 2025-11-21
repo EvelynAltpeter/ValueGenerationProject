@@ -1,0 +1,13 @@
+{
+  "python_core_v1": {
+    "py-easy-1": {
+      "difficulty": "easy"
+    },
+    "py-medium-1": {
+      "difficulty": "medium"
+    },
+    "py-hard-1": {
+      "difficulty": "hard"
+    }
+  }
+}
