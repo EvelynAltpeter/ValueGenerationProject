@@ -6,6 +6,7 @@ from typing import Dict, Optional
 from fastapi import HTTPException, status
 
 from ..models.domain import CandidateResponse, DifficultyBand, QuestionMetadata, TestSession
+from ..rules import RULE_PERFORMANCE, RULE_UX, PERFORMANCE_TIMEOUT_SECONDS, format_user_error
 from ..state import db
 from ..utils.trace_logger import log_event
 from .item_bank import get_question, get_questions_for_track
@@ -16,7 +17,11 @@ BAND_SEQUENCE = [DifficultyBand.easy, DifficultyBand.medium, DifficultyBand.hard
 def get_session(session_id: str) -> TestSession:
     session = db.test_sessions.get(session_id)
     if not session:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Session not found")
+        # R-UX-01: Clear, non-technical error message
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=format_user_error("session not found")
+        )
     return session
 
 
@@ -44,10 +49,18 @@ def _select_question(session: TestSession) -> Optional[QuestionMetadata]:
 def next_question(session_id: str) -> Dict:
     session = get_session(session_id)
     if session.status != "in_progress":
-        raise HTTPException(status_code=400, detail="Session is not active")
+        # R-UX-01: Clear error message
+        raise HTTPException(
+            status_code=400,
+            detail=format_user_error("session is not active", f"Status: {session.status}")
+        )
     if _time_remaining(session) <= 0:
         session.status = "expired"
-        raise HTTPException(status_code=400, detail="Session expired")
+        # R-UX-01: Clear error message
+        raise HTTPException(
+            status_code=400,
+            detail=format_user_error("session expired")
+        )
 
     question: QuestionMetadata
     if session.currentQuestionId:
@@ -79,11 +92,22 @@ def next_question(session_id: str) -> Dict:
 
 
 def _evaluate_immediate(question: QuestionMetadata, response: CandidateResponse) -> bool:
+    """
+    R-PERF-01: Code evaluation should complete within 3 seconds per test case.
+    For demo purposes, we use simple pattern matching. In production, this would
+    run in a sandboxed container with timeout enforcement.
+    """
     if question.questionType == "mcq" and question.answerKey:
         return (response.answer or "").strip() == question.answerKey
     if question.questionType == "coding" and response.code:
+        # R-PERF-01: In production, this would execute in a sandbox with timeout
+        # For now, use pattern matching as a proxy
         code = response.code.lower()
-        return "return" in code and "for" in code or "while" in code
+        # Check for infinite loops (RT-02 protection)
+        if "while(true)" in code or "while(1)" in code or "for(;;)" in code:
+            # Would timeout in real execution
+            return False
+        return "return" in code and ("for" in code or "while" in code)
     return False
 
 

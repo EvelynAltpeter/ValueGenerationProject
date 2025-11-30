@@ -90,6 +90,8 @@ class CandidateScoreReport(BaseModel):
     overallScore: int
     subscores: ScoreBreakdown
     percentile: int
+    strengths: List[str] = Field(default_factory=list)  # R-REP-01: Required in all reports
+    weaknesses: List[str] = Field(default_factory=list)  # R-REP-01: Required in all reports
     completedAt: str
 
 

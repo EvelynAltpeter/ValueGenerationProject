@@ -240,6 +240,17 @@ function CandidateFlow() {
             <span>Code Quality: {report.subscores.code_quality}</span>
           </div>
           <p>Percentile: {report.percentile}</p>
+          {/* R-REP-01: Display strengths and weaknesses */}
+          {report.strengths && report.strengths.length > 0 && (
+            <div className="strengths">
+              <strong>Strengths:</strong> {report.strengths.join(', ')}
+            </div>
+          )}
+          {report.weaknesses && report.weaknesses.length > 0 && (
+            <div className="weaknesses">
+              <strong>Areas for Improvement:</strong> {report.weaknesses.join(', ')}
+            </div>
+          )}
           <button onClick={fetchMatches}>View Recommended Roles</button>
           {matches.length > 0 && (
             <ul>

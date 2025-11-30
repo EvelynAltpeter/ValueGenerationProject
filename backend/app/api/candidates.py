@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException, status
 from pydantic import BaseModel
 
 from ..models.domain import CandidateProfile, SkillTrack
+from ..rules import RULE_UX, format_user_error
 from ..services import candidate_service, employer_service, scoring_service
 from ..utils.api import envelope
 
@@ -32,7 +33,11 @@ def select_track(candidate_id: str, request: TrackSelectionRequest):
 def get_score(candidate_id: str, track_id: SkillTrack):
     report = scoring_service.get_report(candidate_id, track_id.value)
     if not report:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Score not found")
+        # R-UX-01: Clear, non-technical error message
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=format_user_error("score not found", f"Track: {track_id.value}")
+        )
     return envelope(report.model_dump())
 
 

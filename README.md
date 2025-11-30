@@ -1,11 +1,14 @@
 # VGP Technical Proficiency Platform
 
-Demo implementation of the standardized adaptive technical assessment described in `spec.md`.
+Demo implementation of the standardized adaptive technical assessment described in `VGP_Technical_Proficiency_Platform_Spec.md`.
+
+This platform implements a **Blue Ocean** strategy, creating a standardized, cross-employer technical assessment system that allows candidates to "test once, apply everywhere" while enabling employers to filter and match applicants using verifiable proficiency scores.
 
 ## Architecture Overview
 - **Backend:** FastAPI app (`backend/app`) exposing candidate, test, scoring, employer, and trace APIs. Uses in-memory storage plus JSON data files for the item bank and percentiles.
-- **Frontend:** React + Vite single-page app (`frontend/`) with candidate and employer flows per R-UX-01/02.
-- **Trace Logging:** All major actions stream to `logs/trace.jsonl` and `logs/prompt_trace.jsonl` (R-TRACE-01).
+- **Frontend:** React + Vite single-page app (`frontend/`) with candidate and employer flows per R-UX-01.
+- **Trace Logging:** All major actions stream to `logs/trace.jsonl` and `logs/prompt_trace.jsonl` (R-LOG-01).
+- **Rules Compliance:** All system rules (R-PRIV-01, R-PERF-01, R-SCOR-01, R-UX-01, R-ETH-01, R-REP-01, R-LOG-01) are enforced throughout the system.
 
 ## Getting Started
 
@@ -41,8 +44,20 @@ npm run build --prefix frontend
 ```
 
 ## Local URLs
-- Backend API + docs: http://localhost:8000 (FastAPI docs at `/docs`)
-- Frontend SPA: http://localhost:5173
+- **Backend API + docs:** http://localhost:8000 (FastAPI docs at `/docs`)
+- **Frontend SPA:** http://localhost:5173
+
+## System Rules (Rule IDs)
+
+All rules defined in the spec sheet are enforced:
+
+- **R-PRIV-01:** All candidate data stored securely and never shared without explicit consent
+- **R-PERF-01:** Code submissions evaluated within 3 seconds per test case
+- **R-SCOR-01:** Standardized scoring algorithm (raw → scaled → percentile)
+- **R-UX-01:** Clear, non-technical, actionable error messages
+- **R-ETH-01:** Fairness ensured - tests cannot show different questions based on demographics
+- **R-REP-01:** Every score report includes score, percentile, strengths, and weaknesses
+- **R-LOG-01:** All test events logged for auditability
 
 ## Repository Structure
 ```

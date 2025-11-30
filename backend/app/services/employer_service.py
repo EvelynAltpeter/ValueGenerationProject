@@ -3,6 +3,7 @@ from typing import List
 from fastapi import HTTPException, status
 
 from ..models.domain import Candidate, EligibleCandidate, EligibleCandidateList, Employer, JobRequirement, RoleMatch, RoleMatchList, SkillTrack
+from ..rules import RULE_PRIVACY, check_privacy_consent
 from ..state import db
 from ..utils.ids import new_id
 from ..utils.trace_logger import log_event
@@ -46,7 +47,8 @@ def eligible_candidates(employer_id: str, job_id: str) -> EligibleCandidateList:
 
     eligible: List[EligibleCandidate] = []
     for candidate in db.candidates.values():
-        if employer_id not in candidate.sharedEmployers:
+        # R-PRIV-01: Only show candidates who have explicitly shared with this employer
+        if not check_privacy_consent(candidate.id, employer_id, candidate.sharedEmployers):
             continue
         if not _meets_requirements(candidate, job):
             continue

@@ -47,6 +47,59 @@ def _percentile(score: int) -> int:
     return percentile
 
 
+def _calculate_strengths_weaknesses(session, breakdown: dict) -> tuple[list[str], list[str]]:
+    """R-REP-01: Calculate strengths and weaknesses from performance data."""
+    strengths = []
+    weaknesses = []
+    
+    # Analyze subskill performance
+    threshold_high = 75
+    threshold_low = 50
+    
+    if breakdown.get("algorithms", 0) >= threshold_high:
+        strengths.append("algorithms")
+    elif breakdown.get("algorithms", 0) < threshold_low:
+        weaknesses.append("algorithms")
+    
+    if breakdown.get("data_structures", 0) >= threshold_high:
+        strengths.append("data_structures")
+    elif breakdown.get("data_structures", 0) < threshold_low:
+        weaknesses.append("data_structures")
+    
+    if breakdown.get("code_quality", 0) >= threshold_high:
+        strengths.append("code_quality")
+    elif breakdown.get("code_quality", 0) < threshold_low:
+        weaknesses.append("code_quality")
+    
+    # Analyze question tags for more specific strengths/weaknesses
+    tag_performance: dict[str, list[int]] = {}
+    for response in session.responses:
+        question = get_question(response.questionId)
+        if not question:
+            continue
+        score = _mcq_score(question, response.answer) if question.questionType == "mcq" else _coding_score(response.code)
+        for tag in question.tags:
+            tag_performance.setdefault(tag, []).append(score)
+    
+    for tag, scores in tag_performance.items():
+        avg_score = sum(scores) / len(scores) if scores else 0
+        if avg_score >= threshold_high and tag not in strengths:
+            strengths.append(tag)
+        elif avg_score < threshold_low and tag not in weaknesses:
+            weaknesses.append(tag)
+    
+    # Ensure we have at least some strengths/weaknesses
+    if not strengths and not weaknesses:
+        if breakdown.get("algorithms", 0) > breakdown.get("data_structures", 0):
+            strengths.append("algorithms")
+            weaknesses.append("data_structures")
+        else:
+            strengths.append("data_structures")
+            weaknesses.append("algorithms")
+    
+    return strengths, weaknesses
+
+
 def finalize_session(session_id: str) -> CandidateScoreReport:
     session = get_session(session_id)
     if session.status not in {"in_progress", "responses_complete"}:
@@ -74,12 +127,17 @@ def finalize_session(session_id: str) -> CandidateScoreReport:
     overall = int(0.4 * score_breakdown.algorithms + 0.4 * score_breakdown.data_structures + 0.2 * score_breakdown.code_quality)
     percentile = _percentile(overall)
 
+    # R-REP-01: Calculate strengths and weaknesses based on performance
+    strengths, weaknesses = _calculate_strengths_weaknesses(session, breakdown)
+
     report = CandidateScoreReport(
         candidateId=session.candidateId,
         trackId=session.trackId,
         overallScore=overall,
         subscores=score_breakdown,
         percentile=percentile,
+        strengths=strengths,
+        weaknesses=weaknesses,
         completedAt=utc_now_iso(),
     )
     db.score_reports[f"{session.candidateId}:{session.trackId.value}"] = report

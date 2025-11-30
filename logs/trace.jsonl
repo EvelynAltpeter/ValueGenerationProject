@@ -17,3 +17,30 @@
 {"timestamp": "2025-11-21T18:05:44.587112+00:00", "eventType": "session.question_assigned", "actorId": "cand-e60819b0", "payload": {"sessionId": "sess-c763dcde", "questionId": "py-hard-1", "band": "hard"}}
 {"timestamp": "2025-11-21T18:05:58.388044+00:00", "eventType": "session.response_recorded", "actorId": "cand-e60819b0", "payload": {"sessionId": "sess-c763dcde", "questionId": "py-hard-1", "correct": "False", "nextBand": "medium"}}
 {"timestamp": "2025-11-21T18:06:27.826848+00:00", "eventType": "employer.created", "actorId": "emp-f5749a0e", "payload": {"name": "Mag7"}}
+{"timestamp": "2025-11-25T17:34:38.446902+00:00", "eventType": "candidate.created", "actorId": "cand-0cc7cbc3", "payload": {"email": "jetulven@yahoo.com"}}
+{"timestamp": "2025-11-25T17:34:41.089378+00:00", "eventType": "session.created", "actorId": "cand-0cc7cbc3", "payload": {"sessionId": "sess-768ae931", "trackId": "python_core_v1"}}
+{"timestamp": "2025-11-25T17:34:41.095163+00:00", "eventType": "session.question_assigned", "actorId": "cand-0cc7cbc3", "payload": {"sessionId": "sess-768ae931", "questionId": "py-medium-1", "band": "medium"}}
+{"timestamp": "2025-11-25T17:34:53.634572+00:00", "eventType": "session.response_recorded", "actorId": "cand-0cc7cbc3", "payload": {"sessionId": "sess-768ae931", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}}
+{"timestamp": "2025-11-25T17:34:53.638494+00:00", "eventType": "session.question_assigned", "actorId": "cand-0cc7cbc3", "payload": {"sessionId": "sess-768ae931", "questionId": "py-easy-1", "band": "easy"}}
+{"timestamp": "2025-11-25T17:35:07.467176+00:00", "eventType": "session.response_recorded", "actorId": "cand-0cc7cbc3", "payload": {"sessionId": "sess-768ae931", "questionId": "py-easy-1", "correct": "True", "nextBand": "medium"}}
+{"timestamp": "2025-11-25T17:35:07.471044+00:00", "eventType": "session.question_assigned", "actorId": "cand-0cc7cbc3", "payload": {"sessionId": "sess-768ae931", "questionId": "py-hard-1", "band": "hard"}}
+{"timestamp": "2025-11-25T17:35:11.600396+00:00", "eventType": "session.scored", "actorId": "cand-0cc7cbc3", "payload": {"sessionId": "sess-768ae931", "overall": "40", "percentile": "50"}}
+{"timestamp": "2025-11-25T17:35:21.742217+00:00", "eventType": "employer.created", "actorId": "emp-6ca2507f", "payload": {"name": "Mag7"}}
+{"timestamp": "2025-11-25T17:36:52.033298+00:00", "eventType": "candidate.created", "actorId": "cand-33d4633a", "payload": {"email": "jetulven@yahoo.com"}}
+{"timestamp": "2025-11-25T17:36:54.386916+00:00", "eventType": "session.created", "actorId": "cand-33d4633a", "payload": {"sessionId": "sess-7ac54a8d", "trackId": "python_core_v1"}}
+{"timestamp": "2025-11-25T17:36:54.393098+00:00", "eventType": "session.question_assigned", "actorId": "cand-33d4633a", "payload": {"sessionId": "sess-7ac54a8d", "questionId": "py-medium-1", "band": "medium"}}
+{"timestamp": "2025-11-25T17:36:57.966597+00:00", "eventType": "session.response_recorded", "actorId": "cand-33d4633a", "payload": {"sessionId": "sess-7ac54a8d", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}}
+{"timestamp": "2025-11-25T17:36:57.970300+00:00", "eventType": "session.question_assigned", "actorId": "cand-33d4633a", "payload": {"sessionId": "sess-7ac54a8d", "questionId": "py-easy-1", "band": "easy"}}
+{"timestamp": "2025-11-25T17:36:59.819253+00:00", "eventType": "session.response_recorded", "actorId": "cand-33d4633a", "payload": {"sessionId": "sess-7ac54a8d", "questionId": "py-easy-1", "correct": "False", "nextBand": "easy"}}
+{"timestamp": "2025-11-25T17:36:59.824351+00:00", "eventType": "session.question_assigned", "actorId": "cand-33d4633a", "payload": {"sessionId": "sess-7ac54a8d", "questionId": "py-hard-1", "band": "hard"}}
+{"timestamp": "2025-11-25T17:37:04.617135+00:00", "eventType": "session.response_recorded", "actorId": "cand-33d4633a", "payload": {"sessionId": "sess-7ac54a8d", "questionId": "py-hard-1", "correct": "False", "nextBand": "medium"}}
+{"timestamp": "2025-11-25T17:37:29.385271+00:00", "eventType": "employer.created", "actorId": "emp-d08dcbf1", "payload": {"name": "Mag7"}}
+{"timestamp": "2025-11-30T18:34:48.755439+00:00", "eventType": "candidate.created", "actorId": "cand-8a45fe68", "payload": {"email": "jetulven@yahoo.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-11-30T18:34:51.289569+00:00", "eventType": "session.created", "actorId": "cand-8a45fe68", "payload": {"sessionId": "sess-e21ee2a6", "trackId": "python_core_v1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-11-30T18:34:51.296877+00:00", "eventType": "session.question_assigned", "actorId": "cand-8a45fe68", "payload": {"sessionId": "sess-e21ee2a6", "questionId": "py-medium-1", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-11-30T18:34:53.857785+00:00", "eventType": "session.response_recorded", "actorId": "cand-8a45fe68", "payload": {"sessionId": "sess-e21ee2a6", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-11-30T18:34:53.863041+00:00", "eventType": "session.question_assigned", "actorId": "cand-8a45fe68", "payload": {"sessionId": "sess-e21ee2a6", "questionId": "py-easy-1", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-11-30T18:35:03.285188+00:00", "eventType": "session.response_recorded", "actorId": "cand-8a45fe68", "payload": {"sessionId": "sess-e21ee2a6", "questionId": "py-easy-1", "correct": "True", "nextBand": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-11-30T18:35:03.293722+00:00", "eventType": "session.question_assigned", "actorId": "cand-8a45fe68", "payload": {"sessionId": "sess-e21ee2a6", "questionId": "py-hard-1", "band": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-11-30T18:35:05.653802+00:00", "eventType": "session.scored", "actorId": "cand-8a45fe68", "payload": {"sessionId": "sess-e21ee2a6", "overall": "40", "percentile": "50"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-11-30T18:35:18.340481+00:00", "eventType": "employer.created", "actorId": "emp-150670a7", "payload": {"name": "Mag 7"}, "ruleCompliance": "R-LOG-01"}
