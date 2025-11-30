@@ -1,10 +1,16 @@
+"""
+Scoring Service - MongoDB Implementation
+R-SCOR-01: Standardized scoring algorithm
+R-REP-01: All reports include score, percentile, strengths, weaknesses
+R-LOG-01: All scoring events logged
+"""
+
 import json
 from pathlib import Path
-
 from fastapi import HTTPException
 
 from ..models.domain import CandidateScoreReport, ScoreBreakdown
-from ..state import db
+from ..database import get_score_reports_collection, get_test_sessions_collection
 from ..utils.time import utc_now_iso
 from ..utils.trace_logger import log_event
 from .item_bank import get_question
@@ -17,6 +23,7 @@ SUBSKILLS = ["algorithms", "data_structures", "code_quality"]
 
 
 def _coding_score(code: str | None) -> int:
+    """Simple heuristic scoring for code submissions"""
     if not code:
         return 0
     score = 0
@@ -33,12 +40,14 @@ def _coding_score(code: str | None) -> int:
 
 
 def _mcq_score(question, answer: str | None) -> int:
+    """Score multiple choice questions"""
     if question.answerKey and answer:
         return 100 if answer.strip() == question.answerKey else 0
     return 0
 
 
 def _percentile(score: int) -> int:
+    """R-SCOR-01: Convert raw score to percentile"""
     sorted_scores = sorted(int(k) for k in PERCENTILE_TABLE.keys())
     percentile = 50
     for key in sorted_scores:
@@ -47,7 +56,7 @@ def _percentile(score: int) -> int:
     return percentile
 
 
-def _calculate_strengths_weaknesses(session, breakdown: dict) -> tuple[list[str], list[str]]:
+async def _calculate_strengths_weaknesses(session, breakdown: dict) -> tuple[list[str], list[str]]:
     """R-REP-01: Calculate strengths and weaknesses from performance data."""
     strengths = []
     weaknesses = []
@@ -74,7 +83,7 @@ def _calculate_strengths_weaknesses(session, breakdown: dict) -> tuple[list[str]
     # Analyze question tags for more specific strengths/weaknesses
     tag_performance: dict[str, list[int]] = {}
     for response in session.responses:
-        question = get_question(response.questionId)
+        question = await get_question(response.questionId)
         if not question:
             continue
         score = _mcq_score(question, response.answer) if question.questionType == "mcq" else _coding_score(response.code)
@@ -100,16 +109,28 @@ def _calculate_strengths_weaknesses(session, breakdown: dict) -> tuple[list[str]
     return strengths, weaknesses
 
 
-def finalize_session(session_id: str) -> CandidateScoreReport:
-    session = get_session(session_id)
+async def finalize_session(session_id: str) -> CandidateScoreReport:
+    """
+    Finalize test session and generate score report
+    R-SCOR-01: Standardized scoring algorithm
+    R-REP-01: Report includes all required fields
+    """
+    session = await get_session(session_id)
     if session.status not in {"in_progress", "responses_complete"}:
         raise HTTPException(status_code=400, detail="Session already finalized")
+    
+    # Update session status
+    sessions_collection = get_test_sessions_collection()
+    await sessions_collection.update_one(
+        {"sessionId": session_id},
+        {"$set": {"status": "submitted"}}
+    )
     session.status = "submitted"
 
     subskill_scores: dict[str, list[int]] = {k: [] for k in SUBSKILLS}
 
     for response in session.responses:
-        question = get_question(response.questionId)
+        question = await get_question(response.questionId)
         if not question:
             continue
         if question.questionType == "mcq":
@@ -128,7 +149,7 @@ def finalize_session(session_id: str) -> CandidateScoreReport:
     percentile = _percentile(overall)
 
     # R-REP-01: Calculate strengths and weaknesses based on performance
-    strengths, weaknesses = _calculate_strengths_weaknesses(session, breakdown)
+    strengths, weaknesses = await _calculate_strengths_weaknesses(session, breakdown)
 
     report = CandidateScoreReport(
         candidateId=session.candidateId,
@@ -140,7 +161,15 @@ def finalize_session(session_id: str) -> CandidateScoreReport:
         weaknesses=weaknesses,
         completedAt=utc_now_iso(),
     )
-    db.score_reports[f"{session.candidateId}:{session.trackId.value}"] = report
+    
+    # Store in MongoDB
+    reports_collection = get_score_reports_collection()
+    await reports_collection.update_one(
+        {"candidateId": session.candidateId, "trackId": session.trackId.value},
+        {"$set": report.model_dump()},
+        upsert=True
+    )
+    
     log_event(
         "session.scored",
         session.candidateId,
@@ -153,5 +182,13 @@ def finalize_session(session_id: str) -> CandidateScoreReport:
     return report
 
 
-def get_report(candidate_id: str, track_id: str) -> CandidateScoreReport | None:
-    return db.score_reports.get(f"{candidate_id}:{track_id}")
+async def get_report(candidate_id: str, track_id: str) -> CandidateScoreReport | None:
+    """Get score report for a candidate and track"""
+    collection = get_score_reports_collection()
+    doc = await collection.find_one({"candidateId": candidate_id, "trackId": track_id})
+    
+    if not doc:
+        return None
+    
+    doc.pop('_id', None)
+    return CandidateScoreReport(**doc)

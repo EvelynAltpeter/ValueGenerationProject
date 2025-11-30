@@ -1,60 +1,105 @@
-from typing import List
+"""
+Employer Service - MongoDB Implementation
+R-PRIV-01: Privacy-compliant candidate filtering
+R-LOG-01: All operations logged
+"""
 
+from typing import List
 from fastapi import HTTPException, status
 
-from ..models.domain import Candidate, EligibleCandidate, EligibleCandidateList, Employer, JobRequirement, RoleMatch, RoleMatchList, SkillTrack
-from ..rules import RULE_PRIVACY, check_privacy_consent
-from ..state import db
+from ..models.domain import (
+    Candidate, EligibleCandidate, EligibleCandidateList, 
+    Employer, JobRequirement, RoleMatch, RoleMatchList, SkillTrack
+)
+from ..rules import check_privacy_consent
+from ..database import get_employers_collection, get_jobs_collection, get_candidates_collection
 from ..utils.ids import new_id
 from ..utils.trace_logger import log_event
-from .candidate_service import get_candidate
 from .scoring_service import get_report
 
 
-def _ensure_employer(employer_id: str) -> Employer:
-    employer = db.employers.get(employer_id)
-    if not employer:
+async def _ensure_employer(employer_id: str) -> Employer:
+    """Get employer or raise 404"""
+    collection = get_employers_collection()
+    doc = await collection.find_one({"id": employer_id})
+    if not doc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Employer not found")
-    return employer
+    doc.pop('_id', None)
+    return Employer(**doc)
 
 
-def create_employer(name: str) -> Employer:
+async def create_employer(name: str) -> Employer:
+    """Create a new employer"""
     employer_id = new_id("emp")
     employer = Employer(id=employer_id, name=name)
-    db.employers[employer_id] = employer
+    
+    collection = get_employers_collection()
+    await collection.insert_one(employer.model_dump())
+    
     log_event("employer.created", employer_id, {"name": name})
     return employer
 
 
-def upsert_job(employer_id: str, requirement: JobRequirement) -> JobRequirement:
-    employer = _ensure_employer(employer_id)
+async def upsert_job(employer_id: str, requirement: JobRequirement) -> JobRequirement:
+    """Create or update a job requirement"""
+    employer = await _ensure_employer(employer_id)
     requirement.employerId = employer_id
-    db.jobs[requirement.jobId] = requirement
-    existing = [job for job in employer.jobs if job.jobId == requirement.jobId]
-    if existing:
-        employer.jobs = [job if job.jobId != requirement.jobId else requirement for job in employer.jobs]
-    else:
-        employer.jobs.append(requirement)
+    
+    # Store job
+    jobs_collection = get_jobs_collection()
+    await jobs_collection.update_one(
+        {"jobId": requirement.jobId},
+        {"$set": requirement.model_dump()},
+        upsert=True
+    )
+    
+    # Update employer's jobs list
+    employers_collection = get_employers_collection()
+    await employers_collection.update_one(
+        {"id": employer_id},
+        {"$addToSet": {"jobs": requirement.model_dump()}}
+    )
+    
     log_event("job.upserted", employer_id, {"jobId": requirement.jobId})
     return requirement
 
 
-def eligible_candidates(employer_id: str, job_id: str) -> EligibleCandidateList:
-    employer = _ensure_employer(employer_id)
-    job = db.jobs.get(job_id)
-    if not job or job.employerId != employer_id:
+async def eligible_candidates(employer_id: str, job_id: str) -> EligibleCandidateList:
+    """
+    Get eligible candidates for a job
+    R-PRIV-01: Only returns candidates who have explicitly shared
+    """
+    employer = await _ensure_employer(employer_id)
+    
+    jobs_collection = get_jobs_collection()
+    job_doc = await jobs_collection.find_one({"jobId": job_id})
+    
+    if not job_doc or job_doc.get("employerId") != employer_id:
         raise HTTPException(status_code=404, detail="Job not found")
-
+    
+    job_doc.pop('_id', None)
+    job = JobRequirement(**job_doc)
+    
     eligible: List[EligibleCandidate] = []
-    for candidate in db.candidates.values():
-        # R-PRIV-01: Only show candidates who have explicitly shared with this employer
+    
+    # Get all candidates who have shared with this employer
+    candidates_collection = get_candidates_collection()
+    cursor = candidates_collection.find({"sharedEmployers": employer_id})
+    
+    async for doc in cursor:
+        doc.pop('_id', None)
+        candidate = Candidate(**doc)
+        
+        # R-PRIV-01: Double-check privacy consent
         if not check_privacy_consent(candidate.id, employer_id, candidate.sharedEmployers):
             continue
-        if not _meets_requirements(candidate, job):
+        
+        if not await _meets_requirements(candidate, job):
             continue
+        
         track_scores: dict[SkillTrack, int] = {}
         for track in job.requiredTracks:
-            report = get_report(candidate.id, track.value)
+            report = await get_report(candidate.id, track.value)
             if not report:
                 break
             track_scores[track] = report.overallScore
@@ -69,17 +114,15 @@ def eligible_candidates(employer_id: str, job_id: str) -> EligibleCandidateList:
                     matchExplanation=explanation,
                 )
             )
-            continue
-        # if loop breaks due to missing report, skip candidate
-        continue
-
+    
     log_event("job.filter_run", employer_id, {"jobId": job_id, "resultCount": str(len(eligible))})
     return EligibleCandidateList(jobId=job_id, eligibleCandidates=eligible)
 
 
-def _meets_requirements(candidate: Candidate, job: JobRequirement) -> bool:
+async def _meets_requirements(candidate: Candidate, job: JobRequirement) -> bool:
+    """Check if candidate meets job requirements"""
     for track in job.requiredTracks:
-        report = get_report(candidate.id, track.value)
+        report = await get_report(candidate.id, track.value)
         if not report:
             return False
         threshold = job.minScores.get(track)
@@ -89,6 +132,7 @@ def _meets_requirements(candidate: Candidate, job: JobRequirement) -> bool:
 
 
 def _match_score(job: JobRequirement, track_scores: dict[SkillTrack, int]) -> tuple[int, str]:
+    """Calculate match score and explanation"""
     scores = []
     components = []
     for track in job.requiredTracks:
@@ -103,24 +147,41 @@ def _match_score(job: JobRequirement, track_scores: dict[SkillTrack, int]) -> tu
     return min(avg, 100), explanation
 
 
-def candidate_matches(candidate_id: str) -> RoleMatchList:
-    candidate = get_candidate(candidate_id)
+async def candidate_matches(candidate_id: str) -> RoleMatchList:
+    """Get recommended jobs for a candidate"""
+    candidates_collection = get_candidates_collection()
+    candidate_doc = await candidates_collection.find_one({"id": candidate_id})
+    
+    if not candidate_doc:
+        raise HTTPException(status_code=404, detail="Candidate not found")
+    
+    candidate_doc.pop('_id', None)
+    candidate = Candidate(**candidate_doc)
+    
     matches: List[RoleMatch] = []
-    for job in db.jobs.values():
-        if job.employerId not in candidate.sharedEmployers:
+    
+    # Get jobs from employers candidate has shared with
+    jobs_collection = get_jobs_collection()
+    cursor = jobs_collection.find({"employerId": {"$in": candidate.sharedEmployers}})
+    
+    async for job_doc in cursor:
+        job_doc.pop('_id', None)
+        job = JobRequirement(**job_doc)
+        
+        if not await _meets_requirements(candidate, job):
             continue
-        if not _meets_requirements(candidate, job):
-            continue
+        
         track_scores: dict[SkillTrack, int] = {}
         for track in job.requiredTracks:
-            report = get_report(candidate.id, track.value)
+            report = await get_report(candidate.id, track.value)
             if not report:
                 break
             track_scores[track] = report.overallScore
         else:
             match_score, _ = _match_score(job, track_scores)
-            employer = _ensure_employer(job.employerId)
+            employer = await _ensure_employer(job.employerId)
             matches.append(
                 RoleMatch(jobId=job.jobId, company=employer.name, matchScore=match_score)
             )
+    
     return RoleMatchList(candidateId=candidate_id, recommendedJobs=matches)
