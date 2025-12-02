@@ -1,0 +1,185 @@
+[
+  {
+    "questionId": "py-easy-1",
+    "trackId": "python_core_v1",
+    "prompt": "Which data structure preserves insertion order in Python 3.7+?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "data_structures"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "set",
+      "dict",
+      "tuple",
+      "frozenset"
+    ],
+    "answerKey": "dict",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-easy-2",
+    "trackId": "python_core_v1",
+    "prompt": "What does the `len()` function return for an empty list?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "0",
+      "None",
+      "-1",
+      "Error"
+    ],
+    "answerKey": "0",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-easy-3",
+    "trackId": "python_core_v1",
+    "prompt": "Which keyword is used to define a function in Python?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "code_quality",
+    "options": [
+      "function",
+      "def",
+      "define",
+      "func"
+    ],
+    "answerKey": "def",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-easy-4",
+    "trackId": "python_core_v1",
+    "prompt": "What is the output of `print(2 ** 3)`?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "5"
+    ],
+    "answerKey": "8",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-easy-5",
+    "trackId": "python_core_v1",
+    "prompt": "Which method adds an item to the end of a list?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "data_structures"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "add()",
+      "append()",
+      "insert()",
+      "push()"
+    ],
+    "answerKey": "append()",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-medium-1",
+    "trackId": "python_core_v1",
+    "prompt": "What is the time complexity of looking up a key in a Python dict on average?",
+    "questionType": "mcq",
+    "difficulty": "medium",
+    "tags": [
+      "algorithms"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answerKey": "O(1)",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-medium-2",
+    "trackId": "python_core_v1",
+    "prompt": "What does a list comprehension [x*2 for x in range(5)] produce?",
+    "questionType": "mcq",
+    "difficulty": "medium",
+    "tags": [
+      "basics",
+      "data_structures"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "[0, 2, 4, 6, 8]",
+      "[2, 4, 6, 8, 10]",
+      "[1, 2, 3, 4, 5]",
+      "[0, 1, 2, 3, 4]"
+    ],
+    "answerKey": "[0, 2, 4, 6, 8]",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-medium-3",
+    "trackId": "python_core_v1",
+    "prompt": "Implement a function `reverse_string(s)` that returns the reverse of a string without using built-in reverse methods.",
+    "questionType": "coding",
+    "difficulty": "medium",
+    "tags": [
+      "algorithms",
+      "strings"
+    ],
+    "subskill": "algorithms",
+    "referenceSolution": "def reverse_string(s):\n    return s[::-1]",
+    "timeLimitSeconds": 300
+  },
+  {
+    "questionId": "py-hard-1",
+    "trackId": "python_core_v1",
+    "prompt": "Implement a function `two_sum(nums, target)` that returns indices of two numbers summing to target. Assume exactly one solution exists.",
+    "questionType": "coding",
+    "difficulty": "hard",
+    "tags": [
+      "algorithms",
+      "hashmap"
+    ],
+    "subskill": "code_quality",
+    "referenceSolution": "def two_sum(nums, target):\n    seen = {}\n    for i, n in enumerate(nums):\n        if target - n in seen:\n            return [seen[target - n], i]\n        seen[n] = i",
+    "timeLimitSeconds": 600
+  },
+  {
+    "questionId": "py-hard-2",
+    "trackId": "python_core_v1",
+    "prompt": "What is the space complexity of a recursive Fibonacci function without memoization?",
+    "questionType": "mcq",
+    "difficulty": "hard",
+    "tags": [
+      "algorithms"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(2^n)",
+      "O(log n)"
+    ],
+    "answerKey": "O(n)",
+    "timeLimitSeconds": 120
+  }
+]

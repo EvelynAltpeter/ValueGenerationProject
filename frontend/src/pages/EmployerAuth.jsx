@@ -45,6 +45,13 @@ function EmployerAuth() {
     }
   }
 
+  function useDemoAccount() {
+    // Use the demo employer ID with pre-populated candidates
+    localStorage.setItem('employerId', 'emp-demo-test')
+    localStorage.setItem('employerName', 'Demo Company')
+    navigate('/employer/dashboard')
+  }
+
   return (
     <main className="main-content">
       <div style={{ maxWidth: '500px', margin: '0 auto' }}>
@@ -99,6 +106,28 @@ function EmployerAuth() {
               </button>
             </div>
           </form>
+          
+          <div style={{ 
+            marginTop: '24px', 
+            padding: '16px', 
+            background: 'var(--color-surface)', 
+            borderRadius: 'var(--radius-sm)',
+            border: '1px solid var(--color-border)'
+          }}>
+            <p style={{ fontSize: '14px', color: 'var(--color-text-secondary)', marginBottom: '12px' }}>
+              <strong>🎯 Quick Demo:</strong> Try the demo account with pre-loaded sample candidates
+            </p>
+            <button 
+              className="btn btn-secondary" 
+              onClick={useDemoAccount}
+              style={{ width: '100%' }}
+            >
+              Use Demo Account (emp-demo-test)
+            </button>
+            <p style={{ fontSize: '12px', color: 'var(--color-text-secondary)', marginTop: '8px', marginBottom: 0 }}>
+              This account has access to 20 sample candidates with various scores
+            </p>
+          </div>
         </div>
 
         <p className="text-center text-muted" style={{ marginTop: '24px', fontSize: '15px' }}>

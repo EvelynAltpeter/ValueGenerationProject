@@ -32,6 +32,7 @@ class InMemoryCollection:
     
     async def update_one(self, query: Dict, update: Dict, upsert: bool = False):
         """Update one document"""
+        # Try to find existing document
         for doc_id, doc in self.data.items():
             if self._matches(doc, query):
                 if '$set' in update:
@@ -40,15 +41,30 @@ class InMemoryCollection:
                     for key, value in update['$addToSet'].items():
                         if key not in doc:
                             doc[key] = []
-                        if value not in doc[key]:
+                        # Handle both single values and lists
+                        if isinstance(value, list):
+                            for v in value:
+                                if v not in doc[key]:
+                                    doc[key].append(v)
+                        elif value not in doc[key]:
                             doc[key].append(value)
                 return
         
         if upsert:
-            # Insert new document
-            new_doc = query.copy()
+            # Insert new document with $set values
+            new_doc = {}
+            # Include query fields that are not operators
+            for key, value in query.items():
+                if not key.startswith('$'):
+                    new_doc[key] = value
             if '$set' in update:
                 new_doc.update(update['$set'])
+            if '$addToSet' in update:
+                for key, value in update['$addToSet'].items():
+                    if isinstance(value, list):
+                        new_doc[key] = value
+                    else:
+                        new_doc[key] = [value]
             await self.insert_one(new_doc)
     
     async def count_documents(self, query: Dict):
@@ -81,6 +97,10 @@ class InMemoryCollection:
                     if doc[key] not in value['$in']:
                         return False
                 else:
+                    return False
+            elif isinstance(doc[key], list):
+                # If field is a list, check if value is in the list
+                if value not in doc[key]:
                     return False
             elif doc[key] != value:
                 return False
@@ -115,6 +135,10 @@ class InMemoryCursor:
                     # Check if any value in doc[key] is in the $in list
                     if not any(v in value['$in'] for v in doc[key]):
                         return False
+            elif isinstance(doc[key], list):
+                # If field is a list, check if query value is in the list
+                if value not in doc[key]:
+                    return False
             elif doc[key] != value:
                 return False
         

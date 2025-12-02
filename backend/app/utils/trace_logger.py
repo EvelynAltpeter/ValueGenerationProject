@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
 from .time import utc_now_iso
 
@@ -14,7 +14,7 @@ def _write_line(path: Path, payload: Dict[str, Any]) -> None:
         fh.write(json.dumps(payload) + "\n")
 
 
-def log_event(event_type: str, actor_id: str | None, payload: Dict[str, Any]) -> None:
+def log_event(event_type: str, actor_id: Optional[str], payload: Dict[str, Any]) -> None:
     """
     R-LOG-01: Log all test events for auditability.
     

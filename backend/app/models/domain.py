@@ -114,7 +114,7 @@ class EligibleCandidate(BaseModel):
     name: str
     trackScores: Dict[SkillTrack, int]
     matchScore: int
-    matchExplanation: str | None = None
+    matchExplanation: Optional[str] = None
 
 
 class EligibleCandidateList(BaseModel):

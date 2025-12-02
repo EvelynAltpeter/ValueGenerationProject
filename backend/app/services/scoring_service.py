@@ -7,6 +7,7 @@ R-LOG-01: All scoring events logged
 
 import json
 from pathlib import Path
+from typing import Optional
 from fastapi import HTTPException
 
 from ..models.domain import CandidateScoreReport, ScoreBreakdown
@@ -22,7 +23,7 @@ PERCENTILE_TABLE = json.loads(PERCENTILES_PATH.read_text(encoding="utf-8"))
 SUBSKILLS = ["algorithms", "data_structures", "code_quality"]
 
 
-def _coding_score(code: str | None) -> int:
+def _coding_score(code: Optional[str]) -> int:
     """Simple heuristic scoring for code submissions"""
     if not code:
         return 0
@@ -39,7 +40,7 @@ def _coding_score(code: str | None) -> int:
     return min(score, 100)
 
 
-def _mcq_score(question, answer: str | None) -> int:
+def _mcq_score(question, answer: Optional[str]) -> int:
     """Score multiple choice questions"""
     if question.answerKey and answer:
         return 100 if answer.strip() == question.answerKey else 0
@@ -182,7 +183,7 @@ async def finalize_session(session_id: str) -> CandidateScoreReport:
     return report
 
 
-async def get_report(candidate_id: str, track_id: str) -> CandidateScoreReport | None:
+async def get_report(candidate_id: str, track_id: str) -> Optional[CandidateScoreReport]:
     """Get score report for a candidate and track"""
     collection = get_score_reports_collection()
     doc = await collection.find_one({"candidateId": candidate_id, "trackId": track_id})

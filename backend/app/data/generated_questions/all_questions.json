@@ -1,0 +1,393 @@
+[
+  {
+    "questionId": "py-easy-1",
+    "trackId": "python_core_v1",
+    "prompt": "Which data structure preserves insertion order in Python 3.7+?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "data_structures"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "set",
+      "dict",
+      "tuple",
+      "frozenset"
+    ],
+    "answerKey": "dict",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-easy-2",
+    "trackId": "python_core_v1",
+    "prompt": "What does the `len()` function return for an empty list?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "0",
+      "None",
+      "-1",
+      "Error"
+    ],
+    "answerKey": "0",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-easy-3",
+    "trackId": "python_core_v1",
+    "prompt": "Which keyword is used to define a function in Python?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "code_quality",
+    "options": [
+      "function",
+      "def",
+      "define",
+      "func"
+    ],
+    "answerKey": "def",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-easy-4",
+    "trackId": "python_core_v1",
+    "prompt": "What is the output of `print(2 ** 3)`?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "5"
+    ],
+    "answerKey": "8",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-easy-5",
+    "trackId": "python_core_v1",
+    "prompt": "Which method adds an item to the end of a list?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "data_structures"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "add()",
+      "append()",
+      "insert()",
+      "push()"
+    ],
+    "answerKey": "append()",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-medium-1",
+    "trackId": "python_core_v1",
+    "prompt": "What is the time complexity of looking up a key in a Python dict on average?",
+    "questionType": "mcq",
+    "difficulty": "medium",
+    "tags": [
+      "algorithms"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answerKey": "O(1)",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-medium-2",
+    "trackId": "python_core_v1",
+    "prompt": "What does a list comprehension [x*2 for x in range(5)] produce?",
+    "questionType": "mcq",
+    "difficulty": "medium",
+    "tags": [
+      "basics",
+      "data_structures"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "[0, 2, 4, 6, 8]",
+      "[2, 4, 6, 8, 10]",
+      "[1, 2, 3, 4, 5]",
+      "[0, 1, 2, 3, 4]"
+    ],
+    "answerKey": "[0, 2, 4, 6, 8]",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "py-medium-3",
+    "trackId": "python_core_v1",
+    "prompt": "Implement a function `reverse_string(s)` that returns the reverse of a string without using built-in reverse methods.",
+    "questionType": "coding",
+    "difficulty": "medium",
+    "tags": [
+      "algorithms",
+      "strings"
+    ],
+    "subskill": "algorithms",
+    "referenceSolution": "def reverse_string(s):\n    return s[::-1]",
+    "timeLimitSeconds": 300
+  },
+  {
+    "questionId": "py-hard-1",
+    "trackId": "python_core_v1",
+    "prompt": "Implement a function `two_sum(nums, target)` that returns indices of two numbers summing to target. Assume exactly one solution exists.",
+    "questionType": "coding",
+    "difficulty": "hard",
+    "tags": [
+      "algorithms",
+      "hashmap"
+    ],
+    "subskill": "code_quality",
+    "referenceSolution": "def two_sum(nums, target):\n    seen = {}\n    for i, n in enumerate(nums):\n        if target - n in seen:\n            return [seen[target - n], i]\n        seen[n] = i",
+    "timeLimitSeconds": 600
+  },
+  {
+    "questionId": "py-hard-2",
+    "trackId": "python_core_v1",
+    "prompt": "What is the space complexity of a recursive Fibonacci function without memoization?",
+    "questionType": "mcq",
+    "difficulty": "hard",
+    "tags": [
+      "algorithms"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(2^n)",
+      "O(log n)"
+    ],
+    "answerKey": "O(n)",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "sql-easy-1",
+    "trackId": "sql_core_v1",
+    "prompt": "Which SQL keyword is used to retrieve data from a database?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "GET",
+      "SELECT",
+      "FETCH",
+      "RETRIEVE"
+    ],
+    "answerKey": "SELECT",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "sql-easy-2",
+    "trackId": "sql_core_v1",
+    "prompt": "What does SQL stand for?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "Structured Query Language",
+      "Simple Query Language",
+      "Sequential Query Language",
+      "Standard Query Language"
+    ],
+    "answerKey": "Structured Query Language",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "sql-easy-3",
+    "trackId": "sql_core_v1",
+    "prompt": "Which clause is used to filter rows in SQL?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "FILTER",
+      "WHERE",
+      "HAVING",
+      "CONDITION"
+    ],
+    "answerKey": "WHERE",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "sql-medium-1",
+    "trackId": "sql_core_v1",
+    "prompt": "What is the difference between INNER JOIN and LEFT JOIN?",
+    "questionType": "mcq",
+    "difficulty": "medium",
+    "tags": [
+      "joins"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "INNER JOIN returns matching rows only, LEFT JOIN returns all rows from left table",
+      "INNER JOIN returns all rows, LEFT JOIN returns matching rows only",
+      "There is no difference",
+      "INNER JOIN is faster"
+    ],
+    "answerKey": "INNER JOIN returns matching rows only, LEFT JOIN returns all rows from left table",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "sql-medium-2",
+    "trackId": "sql_core_v1",
+    "prompt": "Write a SQL query to find all employees with salary greater than 50000 from the 'employees' table.",
+    "questionType": "coding",
+    "difficulty": "medium",
+    "tags": [
+      "queries"
+    ],
+    "subskill": "algorithms",
+    "referenceSolution": "SELECT * FROM employees WHERE salary > 50000;",
+    "timeLimitSeconds": 300
+  },
+  {
+    "questionId": "sql-hard-1",
+    "trackId": "sql_core_v1",
+    "prompt": "Write a SQL query to find the second highest salary from the employees table.",
+    "questionType": "coding",
+    "difficulty": "hard",
+    "tags": [
+      "queries",
+      "aggregation"
+    ],
+    "subskill": "code_quality",
+    "referenceSolution": "SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees);",
+    "timeLimitSeconds": 600
+  },
+  {
+    "questionId": "js-easy-1",
+    "trackId": "javascript_core_v1",
+    "prompt": "Which keyword is used to declare a variable in JavaScript (ES6+)?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "All of the above"
+    ],
+    "answerKey": "All of the above",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "js-easy-2",
+    "trackId": "javascript_core_v1",
+    "prompt": "What is the result of `typeof null` in JavaScript?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "null",
+      "object",
+      "undefined",
+      "boolean"
+    ],
+    "answerKey": "object",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "js-easy-3",
+    "trackId": "javascript_core_v1",
+    "prompt": "Which method is used to add an element to the end of an array?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "arrays"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "push()",
+      "append()",
+      "add()",
+      "insert()"
+    ],
+    "answerKey": "push()",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "js-medium-1",
+    "trackId": "javascript_core_v1",
+    "prompt": "What is a closure in JavaScript?",
+    "questionType": "mcq",
+    "difficulty": "medium",
+    "tags": [
+      "closures"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "A function that has access to variables in its outer scope",
+      "A way to close a function",
+      "A method to terminate execution",
+      "A type of loop"
+    ],
+    "answerKey": "A function that has access to variables in its outer scope",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "js-medium-2",
+    "trackId": "javascript_core_v1",
+    "prompt": "Implement a function `reverseArray(arr)` that returns a new array with elements in reverse order.",
+    "questionType": "coding",
+    "difficulty": "medium",
+    "tags": [
+      "arrays",
+      "algorithms"
+    ],
+    "subskill": "algorithms",
+    "referenceSolution": "function reverseArray(arr) {\n  return arr.slice().reverse();\n}",
+    "timeLimitSeconds": 300
+  },
+  {
+    "questionId": "js-hard-1",
+    "trackId": "javascript_core_v1",
+    "prompt": "Implement a debounce function that delays function execution until after wait time has passed since the last invocation.",
+    "questionType": "coding",
+    "difficulty": "hard",
+    "tags": [
+      "functions",
+      "async"
+    ],
+    "subskill": "code_quality",
+    "referenceSolution": "function debounce(func, wait) {\n  let timeout;\n  return function(...args) {\n    clearTimeout(timeout);\n    timeout = setTimeout(() => func.apply(this, args), wait);\n  };\n}",
+    "timeLimitSeconds": 600
+  }
+]

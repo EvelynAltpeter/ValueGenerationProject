@@ -3,12 +3,12 @@ Item Bank Service - MongoDB Implementation
 Retrieves questions from MongoDB
 """
 
-from typing import List
+from typing import List, Optional
 from ..models.domain import DifficultyBand, QuestionMetadata, SkillTrack
 from ..database import get_item_bank_collection
 
 
-async def get_questions_for_track(track: SkillTrack, band: DifficultyBand | None = None) -> List[QuestionMetadata]:
+async def get_questions_for_track(track: SkillTrack, band: Optional[DifficultyBand] = None) -> List[QuestionMetadata]:
     """Get questions for a specific track and optional difficulty band"""
     collection = get_item_bank_collection()
     query = {"trackId": track.value}
@@ -23,7 +23,7 @@ async def get_questions_for_track(track: SkillTrack, band: DifficultyBand | None
     return questions
 
 
-async def get_question(question_id: str) -> QuestionMetadata | None:
+async def get_question(question_id: str) -> Optional[QuestionMetadata]:
     """Get a specific question by ID"""
     collection = get_item_bank_collection()
     doc = await collection.find_one({"questionId": question_id})

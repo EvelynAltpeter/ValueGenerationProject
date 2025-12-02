@@ -1,0 +1,105 @@
+[
+  {
+    "questionId": "sql-easy-1",
+    "trackId": "sql_core_v1",
+    "prompt": "Which SQL keyword is used to retrieve data from a database?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "GET",
+      "SELECT",
+      "FETCH",
+      "RETRIEVE"
+    ],
+    "answerKey": "SELECT",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "sql-easy-2",
+    "trackId": "sql_core_v1",
+    "prompt": "What does SQL stand for?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "Structured Query Language",
+      "Simple Query Language",
+      "Sequential Query Language",
+      "Standard Query Language"
+    ],
+    "answerKey": "Structured Query Language",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "sql-easy-3",
+    "trackId": "sql_core_v1",
+    "prompt": "Which clause is used to filter rows in SQL?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "FILTER",
+      "WHERE",
+      "HAVING",
+      "CONDITION"
+    ],
+    "answerKey": "WHERE",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "sql-medium-1",
+    "trackId": "sql_core_v1",
+    "prompt": "What is the difference between INNER JOIN and LEFT JOIN?",
+    "questionType": "mcq",
+    "difficulty": "medium",
+    "tags": [
+      "joins"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "INNER JOIN returns matching rows only, LEFT JOIN returns all rows from left table",
+      "INNER JOIN returns all rows, LEFT JOIN returns matching rows only",
+      "There is no difference",
+      "INNER JOIN is faster"
+    ],
+    "answerKey": "INNER JOIN returns matching rows only, LEFT JOIN returns all rows from left table",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "sql-medium-2",
+    "trackId": "sql_core_v1",
+    "prompt": "Write a SQL query to find all employees with salary greater than 50000 from the 'employees' table.",
+    "questionType": "coding",
+    "difficulty": "medium",
+    "tags": [
+      "queries"
+    ],
+    "subskill": "algorithms",
+    "referenceSolution": "SELECT * FROM employees WHERE salary > 50000;",
+    "timeLimitSeconds": 300
+  },
+  {
+    "questionId": "sql-hard-1",
+    "trackId": "sql_core_v1",
+    "prompt": "Write a SQL query to find the second highest salary from the employees table.",
+    "questionType": "coding",
+    "difficulty": "hard",
+    "tags": [
+      "queries",
+      "aggregation"
+    ],
+    "subskill": "code_quality",
+    "referenceSolution": "SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees);",
+    "timeLimitSeconds": 600
+  }
+]

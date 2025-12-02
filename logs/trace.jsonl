@@ -381,3 +381,891 @@
 {"timestamp": "2025-11-30T21:24:08.998440+00:00", "eventType": "session.scored", "actorId": "cand-e942b3e7", "payload": {"sessionId": "sess-378e00c6", "overall": "0", "percentile": "50"}, "ruleCompliance": "R-LOG-01"}
 {"timestamp": "2025-11-30T21:26:24.555987+00:00", "eventType": "session.created", "actorId": "cand-e942b3e7", "payload": {"sessionId": "sess-26818354", "trackId": "sql_core_v1"}, "ruleCompliance": "R-LOG-01"}
 {"timestamp": "2025-11-30T21:26:24.565001+00:00", "eventType": "session.question_assigned", "actorId": "cand-e942b3e7", "payload": {"sessionId": "sess-26818354", "questionId": "sql_002", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:26:01.966423+00:00", "eventType": "candidate.created", "actorId": "cand-6cb5bfe4", "payload": {"email": "paulc@gmail.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:26:03.678003+00:00", "eventType": "session.created", "actorId": "cand-6cb5bfe4", "payload": {"sessionId": "sess-90ef1899", "trackId": "python_core_v1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:26:52.273080+00:00", "eventType": "candidate.created", "actorId": "cand-20353115", "payload": {"email": "paulc@gmail.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:26:53.354684+00:00", "eventType": "session.created", "actorId": "cand-20353115", "payload": {"sessionId": "sess-0cbce6d2", "trackId": "python_core_v1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:27:39.988595+00:00", "eventType": "candidate.created", "actorId": "cand-5747493b", "payload": {"email": "paulc@gmail.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:28:07.621211+00:00", "eventType": "session.created", "actorId": "cand-5747493b", "payload": {"sessionId": "sess-f37bc605", "trackId": "python_core_v1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:18.411517+00:00", "eventType": "candidate.created", "actorId": "cand-4a20b805", "payload": {"email": "paul@gmail.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:19.405383+00:00", "eventType": "session.created", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "trackId": "python_core_v1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:19.410599+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-medium-1", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:28.493181+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:28.495782+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-1", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:31.208413+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-1", "correct": "True", "nextBand": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:31.210214+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-medium-2", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:32.094152+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-medium-2", "correct": "True", "nextBand": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:32.099456+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-hard-1", "band": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:37.410918+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-hard-1", "correct": "False", "nextBand": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:37.416656+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-medium-3", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:40.054380+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-medium-3", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:40.055991+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-2", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:43.581346+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-2", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:43.585092+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-3", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:44.220114+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-3", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:44.225432+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-4", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:44.587543+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-4", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:44.593984+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-5", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:45.011163+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-easy-5", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:45.015892+00:00", "eventType": "session.question_assigned", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-hard-2", "band": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:45.328347+00:00", "eventType": "session.response_recorded", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "questionId": "py-hard-2", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:37:46.853528+00:00", "eventType": "session.scored", "actorId": "cand-4a20b805", "payload": {"sessionId": "sess-3760606a", "overall": "20", "percentile": "50"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:52:24.046051+00:00", "eventType": "candidate.created", "actorId": "cand-79004b93", "payload": {"email": "test@example.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:52:49.527928+00:00", "eventType": "candidate.created", "actorId": "cand-3200a27f", "payload": {"email": "s@gmail.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:52:50.669738+00:00", "eventType": "session.created", "actorId": "cand-3200a27f", "payload": {"sessionId": "sess-60c20549", "trackId": "python_core_v1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:40.218915+00:00", "eventType": "candidate.created", "actorId": "cand-04697182", "payload": {"email": "s@gmail.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:41.320559+00:00", "eventType": "session.created", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "trackId": "python_core_v1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:41.322593+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-medium-1", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:43.191850+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:43.195459+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-1", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:44.067045+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:44.071988+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-2", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:44.564958+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-2", "correct": "True", "nextBand": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:44.571106+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-medium-2", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:44.990126+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-medium-2", "correct": "True", "nextBand": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:44.995157+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-hard-1", "band": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:47.429251+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-hard-1", "correct": "False", "nextBand": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:47.434346+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-medium-3", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:49.291147+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-medium-3", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:49.297296+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-3", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:50.326335+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-3", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:50.332423+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-4", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:50.893670+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-4", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:50.895791+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-5", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:51.470824+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-easy-5", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:51.472678+00:00", "eventType": "session.question_assigned", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-hard-2", "band": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T18:58:52.251031+00:00", "eventType": "session.response_recorded", "actorId": "cand-04697182", "payload": {"sessionId": "sess-fae0ea83", "questionId": "py-hard-2", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:42.157987+00:00", "eventType": "candidate.created", "actorId": "cand-82b058dd", "payload": {"email": "s@gmail.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:43.088221+00:00", "eventType": "session.created", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "trackId": "python_core_v1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:43.094261+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-medium-1", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:45.091935+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:45.095176+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-1", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:46.040270+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:46.046898+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-2", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:46.560694+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-2", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:46.564930+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-3", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:47.062539+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-3", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:47.068363+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-4", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:47.585199+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-4", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:47.589547+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-5", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:48.042410+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-easy-5", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:48.048429+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-medium-2", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:48.554830+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-medium-2", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:48.559133+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-medium-3", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:51.030378+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-medium-3", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:51.036393+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-hard-1", "band": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:52.881459+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-hard-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:52.885437+00:00", "eventType": "session.question_assigned", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-hard-2", "band": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:53.989953+00:00", "eventType": "session.response_recorded", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "questionId": "py-hard-2", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:02:53.999885+00:00", "eventType": "session.scored", "actorId": "cand-82b058dd", "payload": {"sessionId": "sess-66c6edf8", "overall": "0", "percentile": "50"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:03:09.332567+00:00", "eventType": "candidate.share", "actorId": "cand-82b058dd", "payload": {"employerId": "ss"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:03:18.946613+00:00", "eventType": "candidate.share", "actorId": "cand-82b058dd", "payload": {"employerId": "ff"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:03:32.654484+00:00", "eventType": "employer.created", "actorId": "emp-b26170df", "payload": {"name": "ddd"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.332809+00:00", "eventType": "employer.created", "actorId": "emp-28a2c431", "payload": {"name": "TechCorp Inc"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.333662+00:00", "eventType": "employer.created", "actorId": "emp-46ef1745", "payload": {"name": "DataSystems LLC"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.333919+00:00", "eventType": "employer.created", "actorId": "emp-75d38c18", "payload": {"name": "CodeFactory"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.338948+00:00", "eventType": "candidate.created", "actorId": "cand-b8772fe8", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.339328+00:00", "eventType": "candidate.share", "actorId": "cand-b8772fe8", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.339558+00:00", "eventType": "candidate.share", "actorId": "cand-b8772fe8", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.339749+00:00", "eventType": "candidate.share", "actorId": "cand-b8772fe8", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.340257+00:00", "eventType": "candidate.created", "actorId": "cand-14507680", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.340473+00:00", "eventType": "candidate.share", "actorId": "cand-14507680", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.340660+00:00", "eventType": "candidate.share", "actorId": "cand-14507680", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.340824+00:00", "eventType": "candidate.share", "actorId": "cand-14507680", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.341129+00:00", "eventType": "candidate.created", "actorId": "cand-0bdffca7", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.341330+00:00", "eventType": "candidate.share", "actorId": "cand-0bdffca7", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.341494+00:00", "eventType": "candidate.share", "actorId": "cand-0bdffca7", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.341663+00:00", "eventType": "candidate.share", "actorId": "cand-0bdffca7", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.341871+00:00", "eventType": "candidate.created", "actorId": "cand-a2d44c81", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.342039+00:00", "eventType": "candidate.share", "actorId": "cand-a2d44c81", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.342227+00:00", "eventType": "candidate.share", "actorId": "cand-a2d44c81", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.342397+00:00", "eventType": "candidate.share", "actorId": "cand-a2d44c81", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.342625+00:00", "eventType": "candidate.created", "actorId": "cand-e6505c83", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.342797+00:00", "eventType": "candidate.share", "actorId": "cand-e6505c83", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.342959+00:00", "eventType": "candidate.share", "actorId": "cand-e6505c83", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.343120+00:00", "eventType": "candidate.share", "actorId": "cand-e6505c83", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.343377+00:00", "eventType": "candidate.created", "actorId": "cand-1a4f3bd7", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.343586+00:00", "eventType": "candidate.share", "actorId": "cand-1a4f3bd7", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.343747+00:00", "eventType": "candidate.share", "actorId": "cand-1a4f3bd7", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.343914+00:00", "eventType": "candidate.share", "actorId": "cand-1a4f3bd7", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.344153+00:00", "eventType": "candidate.created", "actorId": "cand-23cca1e8", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.344307+00:00", "eventType": "candidate.share", "actorId": "cand-23cca1e8", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.344515+00:00", "eventType": "candidate.share", "actorId": "cand-23cca1e8", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.344683+00:00", "eventType": "candidate.share", "actorId": "cand-23cca1e8", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.344922+00:00", "eventType": "candidate.created", "actorId": "cand-db73208f", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.345075+00:00", "eventType": "candidate.share", "actorId": "cand-db73208f", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.345233+00:00", "eventType": "candidate.share", "actorId": "cand-db73208f", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.345377+00:00", "eventType": "candidate.share", "actorId": "cand-db73208f", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.345644+00:00", "eventType": "candidate.created", "actorId": "cand-067ed7a4", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.345804+00:00", "eventType": "candidate.share", "actorId": "cand-067ed7a4", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.345957+00:00", "eventType": "candidate.share", "actorId": "cand-067ed7a4", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.346110+00:00", "eventType": "candidate.share", "actorId": "cand-067ed7a4", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.346349+00:00", "eventType": "candidate.created", "actorId": "cand-f252324f", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.346525+00:00", "eventType": "candidate.share", "actorId": "cand-f252324f", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.347149+00:00", "eventType": "candidate.share", "actorId": "cand-f252324f", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.347559+00:00", "eventType": "candidate.share", "actorId": "cand-f252324f", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.347863+00:00", "eventType": "candidate.created", "actorId": "cand-b84f95ef", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.348043+00:00", "eventType": "candidate.share", "actorId": "cand-b84f95ef", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.348216+00:00", "eventType": "candidate.share", "actorId": "cand-b84f95ef", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.348386+00:00", "eventType": "candidate.share", "actorId": "cand-b84f95ef", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.348595+00:00", "eventType": "candidate.created", "actorId": "cand-bf268e22", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.348757+00:00", "eventType": "candidate.share", "actorId": "cand-bf268e22", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.348921+00:00", "eventType": "candidate.share", "actorId": "cand-bf268e22", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.349072+00:00", "eventType": "candidate.share", "actorId": "cand-bf268e22", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.349293+00:00", "eventType": "candidate.created", "actorId": "cand-8b56a929", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.349455+00:00", "eventType": "candidate.share", "actorId": "cand-8b56a929", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.349610+00:00", "eventType": "candidate.share", "actorId": "cand-8b56a929", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.349788+00:00", "eventType": "candidate.share", "actorId": "cand-8b56a929", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.349975+00:00", "eventType": "candidate.created", "actorId": "cand-f0276d74", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.350131+00:00", "eventType": "candidate.share", "actorId": "cand-f0276d74", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.350280+00:00", "eventType": "candidate.share", "actorId": "cand-f0276d74", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.350426+00:00", "eventType": "candidate.share", "actorId": "cand-f0276d74", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.350664+00:00", "eventType": "candidate.created", "actorId": "cand-9276cb04", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.350831+00:00", "eventType": "candidate.share", "actorId": "cand-9276cb04", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.351003+00:00", "eventType": "candidate.share", "actorId": "cand-9276cb04", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.351153+00:00", "eventType": "candidate.share", "actorId": "cand-9276cb04", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.351396+00:00", "eventType": "candidate.created", "actorId": "cand-ef9729d4", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.351554+00:00", "eventType": "candidate.share", "actorId": "cand-ef9729d4", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.351701+00:00", "eventType": "candidate.share", "actorId": "cand-ef9729d4", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.351850+00:00", "eventType": "candidate.share", "actorId": "cand-ef9729d4", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.352095+00:00", "eventType": "candidate.created", "actorId": "cand-bb367e18", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.352243+00:00", "eventType": "candidate.share", "actorId": "cand-bb367e18", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.352380+00:00", "eventType": "candidate.share", "actorId": "cand-bb367e18", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.352515+00:00", "eventType": "candidate.share", "actorId": "cand-bb367e18", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.352678+00:00", "eventType": "candidate.created", "actorId": "cand-6c0e333a", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.352824+00:00", "eventType": "candidate.share", "actorId": "cand-6c0e333a", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.352979+00:00", "eventType": "candidate.share", "actorId": "cand-6c0e333a", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.353120+00:00", "eventType": "candidate.share", "actorId": "cand-6c0e333a", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.353344+00:00", "eventType": "candidate.created", "actorId": "cand-0d9232a5", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.353490+00:00", "eventType": "candidate.share", "actorId": "cand-0d9232a5", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.353628+00:00", "eventType": "candidate.share", "actorId": "cand-0d9232a5", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.353764+00:00", "eventType": "candidate.share", "actorId": "cand-0d9232a5", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.353987+00:00", "eventType": "candidate.created", "actorId": "cand-38fd8c35", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.354138+00:00", "eventType": "candidate.share", "actorId": "cand-38fd8c35", "payload": {"employerId": "emp-28a2c431"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.354302+00:00", "eventType": "candidate.share", "actorId": "cand-38fd8c35", "payload": {"employerId": "emp-46ef1745"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:23.354438+00:00", "eventType": "candidate.share", "actorId": "cand-38fd8c35", "payload": {"employerId": "emp-75d38c18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.172069+00:00", "eventType": "employer.created", "actorId": "emp-6947011c", "payload": {"name": "TechCorp Inc"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.172327+00:00", "eventType": "employer.created", "actorId": "emp-3e47343f", "payload": {"name": "DataSystems LLC"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.172574+00:00", "eventType": "employer.created", "actorId": "emp-33a7ee44", "payload": {"name": "CodeFactory"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.176513+00:00", "eventType": "candidate.created", "actorId": "cand-fde15a67", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.176863+00:00", "eventType": "candidate.share", "actorId": "cand-fde15a67", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.177027+00:00", "eventType": "candidate.share", "actorId": "cand-fde15a67", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.177165+00:00", "eventType": "candidate.share", "actorId": "cand-fde15a67", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.177459+00:00", "eventType": "candidate.created", "actorId": "cand-bef4b650", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.177653+00:00", "eventType": "candidate.share", "actorId": "cand-bef4b650", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.177793+00:00", "eventType": "candidate.share", "actorId": "cand-bef4b650", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.177911+00:00", "eventType": "candidate.share", "actorId": "cand-bef4b650", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.178113+00:00", "eventType": "candidate.created", "actorId": "cand-16be4653", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.178277+00:00", "eventType": "candidate.share", "actorId": "cand-16be4653", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.178400+00:00", "eventType": "candidate.share", "actorId": "cand-16be4653", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.178510+00:00", "eventType": "candidate.share", "actorId": "cand-16be4653", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.178684+00:00", "eventType": "candidate.created", "actorId": "cand-0573a804", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.178799+00:00", "eventType": "candidate.share", "actorId": "cand-0573a804", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.178912+00:00", "eventType": "candidate.share", "actorId": "cand-0573a804", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.179023+00:00", "eventType": "candidate.share", "actorId": "cand-0573a804", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.179209+00:00", "eventType": "candidate.created", "actorId": "cand-316de4b7", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.179352+00:00", "eventType": "candidate.share", "actorId": "cand-316de4b7", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.179471+00:00", "eventType": "candidate.share", "actorId": "cand-316de4b7", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.179579+00:00", "eventType": "candidate.share", "actorId": "cand-316de4b7", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.179753+00:00", "eventType": "candidate.created", "actorId": "cand-bd9abce4", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.179869+00:00", "eventType": "candidate.share", "actorId": "cand-bd9abce4", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.179978+00:00", "eventType": "candidate.share", "actorId": "cand-bd9abce4", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.180090+00:00", "eventType": "candidate.share", "actorId": "cand-bd9abce4", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.180269+00:00", "eventType": "candidate.created", "actorId": "cand-b6470ca2", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.180415+00:00", "eventType": "candidate.share", "actorId": "cand-b6470ca2", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.180528+00:00", "eventType": "candidate.share", "actorId": "cand-b6470ca2", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.180638+00:00", "eventType": "candidate.share", "actorId": "cand-b6470ca2", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.180814+00:00", "eventType": "candidate.created", "actorId": "cand-551c4b46", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.180931+00:00", "eventType": "candidate.share", "actorId": "cand-551c4b46", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.181041+00:00", "eventType": "candidate.share", "actorId": "cand-551c4b46", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.181151+00:00", "eventType": "candidate.share", "actorId": "cand-551c4b46", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.181331+00:00", "eventType": "candidate.created", "actorId": "cand-632c77a2", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.181505+00:00", "eventType": "candidate.share", "actorId": "cand-632c77a2", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.181754+00:00", "eventType": "candidate.share", "actorId": "cand-632c77a2", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.181898+00:00", "eventType": "candidate.share", "actorId": "cand-632c77a2", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.182136+00:00", "eventType": "candidate.created", "actorId": "cand-59cbb089", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.182268+00:00", "eventType": "candidate.share", "actorId": "cand-59cbb089", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.182390+00:00", "eventType": "candidate.share", "actorId": "cand-59cbb089", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.182509+00:00", "eventType": "candidate.share", "actorId": "cand-59cbb089", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.182706+00:00", "eventType": "candidate.created", "actorId": "cand-351267bf", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.182849+00:00", "eventType": "candidate.share", "actorId": "cand-351267bf", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.182972+00:00", "eventType": "candidate.share", "actorId": "cand-351267bf", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.183090+00:00", "eventType": "candidate.share", "actorId": "cand-351267bf", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.183278+00:00", "eventType": "candidate.created", "actorId": "cand-9516d216", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.183391+00:00", "eventType": "candidate.share", "actorId": "cand-9516d216", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.183502+00:00", "eventType": "candidate.share", "actorId": "cand-9516d216", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.183608+00:00", "eventType": "candidate.share", "actorId": "cand-9516d216", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.183788+00:00", "eventType": "candidate.created", "actorId": "cand-0235a723", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.183926+00:00", "eventType": "candidate.share", "actorId": "cand-0235a723", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.184053+00:00", "eventType": "candidate.share", "actorId": "cand-0235a723", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.184160+00:00", "eventType": "candidate.share", "actorId": "cand-0235a723", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.184352+00:00", "eventType": "candidate.created", "actorId": "cand-b56fd528", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.184472+00:00", "eventType": "candidate.share", "actorId": "cand-b56fd528", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.184588+00:00", "eventType": "candidate.share", "actorId": "cand-b56fd528", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.184700+00:00", "eventType": "candidate.share", "actorId": "cand-b56fd528", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.184885+00:00", "eventType": "candidate.created", "actorId": "cand-20d8d742", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.185013+00:00", "eventType": "candidate.share", "actorId": "cand-20d8d742", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.185126+00:00", "eventType": "candidate.share", "actorId": "cand-20d8d742", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.185300+00:00", "eventType": "candidate.share", "actorId": "cand-20d8d742", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.185504+00:00", "eventType": "candidate.created", "actorId": "cand-1c3ac69b", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.185639+00:00", "eventType": "candidate.share", "actorId": "cand-1c3ac69b", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.185836+00:00", "eventType": "candidate.share", "actorId": "cand-1c3ac69b", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.185945+00:00", "eventType": "candidate.share", "actorId": "cand-1c3ac69b", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.186138+00:00", "eventType": "candidate.created", "actorId": "cand-17a33f39", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.186358+00:00", "eventType": "candidate.share", "actorId": "cand-17a33f39", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.186470+00:00", "eventType": "candidate.share", "actorId": "cand-17a33f39", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.186583+00:00", "eventType": "candidate.share", "actorId": "cand-17a33f39", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.186775+00:00", "eventType": "candidate.created", "actorId": "cand-61d5e05c", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.186889+00:00", "eventType": "candidate.share", "actorId": "cand-61d5e05c", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.186998+00:00", "eventType": "candidate.share", "actorId": "cand-61d5e05c", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.187110+00:00", "eventType": "candidate.share", "actorId": "cand-61d5e05c", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.187330+00:00", "eventType": "candidate.created", "actorId": "cand-6f6f1550", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.187451+00:00", "eventType": "candidate.share", "actorId": "cand-6f6f1550", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.187559+00:00", "eventType": "candidate.share", "actorId": "cand-6f6f1550", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.187668+00:00", "eventType": "candidate.share", "actorId": "cand-6f6f1550", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.187868+00:00", "eventType": "candidate.created", "actorId": "cand-1ddc3303", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.187984+00:00", "eventType": "candidate.share", "actorId": "cand-1ddc3303", "payload": {"employerId": "emp-6947011c"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.188095+00:00", "eventType": "candidate.share", "actorId": "cand-1ddc3303", "payload": {"employerId": "emp-3e47343f"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:06:37.188233+00:00", "eventType": "candidate.share", "actorId": "cand-1ddc3303", "payload": {"employerId": "emp-33a7ee44"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:08:27.742838+00:00", "eventType": "employer.created", "actorId": "emp-a5853cfa", "payload": {"name": "NEU corp"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.562021+00:00", "eventType": "employer.created", "actorId": "emp-9ffccb45", "payload": {"name": "TechCorp Inc"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.563649+00:00", "eventType": "employer.created", "actorId": "emp-50ebbcd4", "payload": {"name": "DataSystems LLC"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.564048+00:00", "eventType": "employer.created", "actorId": "emp-b53bc35d", "payload": {"name": "CodeFactory"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.568884+00:00", "eventType": "candidate.created", "actorId": "cand-b08ae45d", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.569220+00:00", "eventType": "candidate.share", "actorId": "cand-b08ae45d", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.569459+00:00", "eventType": "candidate.share", "actorId": "cand-b08ae45d", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.569857+00:00", "eventType": "candidate.share", "actorId": "cand-b08ae45d", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.570029+00:00", "eventType": "candidate.share", "actorId": "cand-b08ae45d", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.570339+00:00", "eventType": "candidate.created", "actorId": "cand-2ca3d2d2", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.570527+00:00", "eventType": "candidate.share", "actorId": "cand-2ca3d2d2", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.570692+00:00", "eventType": "candidate.share", "actorId": "cand-2ca3d2d2", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.571135+00:00", "eventType": "candidate.share", "actorId": "cand-2ca3d2d2", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.571500+00:00", "eventType": "candidate.share", "actorId": "cand-2ca3d2d2", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.571844+00:00", "eventType": "candidate.created", "actorId": "cand-906ba718", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.572021+00:00", "eventType": "candidate.share", "actorId": "cand-906ba718", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.572212+00:00", "eventType": "candidate.share", "actorId": "cand-906ba718", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.572390+00:00", "eventType": "candidate.share", "actorId": "cand-906ba718", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.572553+00:00", "eventType": "candidate.share", "actorId": "cand-906ba718", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.572823+00:00", "eventType": "candidate.created", "actorId": "cand-eb3dee5d", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.573162+00:00", "eventType": "candidate.share", "actorId": "cand-eb3dee5d", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.573388+00:00", "eventType": "candidate.share", "actorId": "cand-eb3dee5d", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.573559+00:00", "eventType": "candidate.share", "actorId": "cand-eb3dee5d", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.573722+00:00", "eventType": "candidate.share", "actorId": "cand-eb3dee5d", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.574013+00:00", "eventType": "candidate.created", "actorId": "cand-3757fb58", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.574204+00:00", "eventType": "candidate.share", "actorId": "cand-3757fb58", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.574362+00:00", "eventType": "candidate.share", "actorId": "cand-3757fb58", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.574508+00:00", "eventType": "candidate.share", "actorId": "cand-3757fb58", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.574651+00:00", "eventType": "candidate.share", "actorId": "cand-3757fb58", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.574899+00:00", "eventType": "candidate.created", "actorId": "cand-1c832c8f", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.575062+00:00", "eventType": "candidate.share", "actorId": "cand-1c832c8f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.575206+00:00", "eventType": "candidate.share", "actorId": "cand-1c832c8f", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.575354+00:00", "eventType": "candidate.share", "actorId": "cand-1c832c8f", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.575520+00:00", "eventType": "candidate.share", "actorId": "cand-1c832c8f", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.575771+00:00", "eventType": "candidate.created", "actorId": "cand-b7fba6be", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.575922+00:00", "eventType": "candidate.share", "actorId": "cand-b7fba6be", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.576067+00:00", "eventType": "candidate.share", "actorId": "cand-b7fba6be", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.576208+00:00", "eventType": "candidate.share", "actorId": "cand-b7fba6be", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.576393+00:00", "eventType": "candidate.share", "actorId": "cand-b7fba6be", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.576663+00:00", "eventType": "candidate.created", "actorId": "cand-28334b34", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.576828+00:00", "eventType": "candidate.share", "actorId": "cand-28334b34", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.576979+00:00", "eventType": "candidate.share", "actorId": "cand-28334b34", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.577160+00:00", "eventType": "candidate.share", "actorId": "cand-28334b34", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.577309+00:00", "eventType": "candidate.share", "actorId": "cand-28334b34", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.577564+00:00", "eventType": "candidate.created", "actorId": "cand-123c128c", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.577847+00:00", "eventType": "candidate.share", "actorId": "cand-123c128c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.578073+00:00", "eventType": "candidate.share", "actorId": "cand-123c128c", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.578253+00:00", "eventType": "candidate.share", "actorId": "cand-123c128c", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.578412+00:00", "eventType": "candidate.share", "actorId": "cand-123c128c", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.578708+00:00", "eventType": "candidate.created", "actorId": "cand-cef38f9e", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.578890+00:00", "eventType": "candidate.share", "actorId": "cand-cef38f9e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.579045+00:00", "eventType": "candidate.share", "actorId": "cand-cef38f9e", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.579185+00:00", "eventType": "candidate.share", "actorId": "cand-cef38f9e", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.579318+00:00", "eventType": "candidate.share", "actorId": "cand-cef38f9e", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.579555+00:00", "eventType": "candidate.created", "actorId": "cand-29f321a2", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.579710+00:00", "eventType": "candidate.share", "actorId": "cand-29f321a2", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.579857+00:00", "eventType": "candidate.share", "actorId": "cand-29f321a2", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.580001+00:00", "eventType": "candidate.share", "actorId": "cand-29f321a2", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.580135+00:00", "eventType": "candidate.share", "actorId": "cand-29f321a2", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.580369+00:00", "eventType": "candidate.created", "actorId": "cand-8c5912c1", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.580534+00:00", "eventType": "candidate.share", "actorId": "cand-8c5912c1", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.580670+00:00", "eventType": "candidate.share", "actorId": "cand-8c5912c1", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.580801+00:00", "eventType": "candidate.share", "actorId": "cand-8c5912c1", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.580931+00:00", "eventType": "candidate.share", "actorId": "cand-8c5912c1", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.581158+00:00", "eventType": "candidate.created", "actorId": "cand-bd901fdf", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.581298+00:00", "eventType": "candidate.share", "actorId": "cand-bd901fdf", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.581434+00:00", "eventType": "candidate.share", "actorId": "cand-bd901fdf", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.581574+00:00", "eventType": "candidate.share", "actorId": "cand-bd901fdf", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.581721+00:00", "eventType": "candidate.share", "actorId": "cand-bd901fdf", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.581946+00:00", "eventType": "candidate.created", "actorId": "cand-4c023141", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.582089+00:00", "eventType": "candidate.share", "actorId": "cand-4c023141", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.582224+00:00", "eventType": "candidate.share", "actorId": "cand-4c023141", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.582357+00:00", "eventType": "candidate.share", "actorId": "cand-4c023141", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.582488+00:00", "eventType": "candidate.share", "actorId": "cand-4c023141", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.582715+00:00", "eventType": "candidate.created", "actorId": "cand-c49568f6", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.582878+00:00", "eventType": "candidate.share", "actorId": "cand-c49568f6", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.583020+00:00", "eventType": "candidate.share", "actorId": "cand-c49568f6", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.583154+00:00", "eventType": "candidate.share", "actorId": "cand-c49568f6", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.583286+00:00", "eventType": "candidate.share", "actorId": "cand-c49568f6", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.583519+00:00", "eventType": "candidate.created", "actorId": "cand-591e6ab7", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.583661+00:00", "eventType": "candidate.share", "actorId": "cand-591e6ab7", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.583797+00:00", "eventType": "candidate.share", "actorId": "cand-591e6ab7", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.583933+00:00", "eventType": "candidate.share", "actorId": "cand-591e6ab7", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.584077+00:00", "eventType": "candidate.share", "actorId": "cand-591e6ab7", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.584401+00:00", "eventType": "candidate.created", "actorId": "cand-cf18bf9d", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.584732+00:00", "eventType": "candidate.share", "actorId": "cand-cf18bf9d", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.584883+00:00", "eventType": "candidate.share", "actorId": "cand-cf18bf9d", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.585027+00:00", "eventType": "candidate.share", "actorId": "cand-cf18bf9d", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.585168+00:00", "eventType": "candidate.share", "actorId": "cand-cf18bf9d", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.585421+00:00", "eventType": "candidate.created", "actorId": "cand-b598b8ec", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.585581+00:00", "eventType": "candidate.share", "actorId": "cand-b598b8ec", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.585723+00:00", "eventType": "candidate.share", "actorId": "cand-b598b8ec", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.585868+00:00", "eventType": "candidate.share", "actorId": "cand-b598b8ec", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.586006+00:00", "eventType": "candidate.share", "actorId": "cand-b598b8ec", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.586248+00:00", "eventType": "candidate.created", "actorId": "cand-45fdf92c", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.586396+00:00", "eventType": "candidate.share", "actorId": "cand-45fdf92c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.586542+00:00", "eventType": "candidate.share", "actorId": "cand-45fdf92c", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.586674+00:00", "eventType": "candidate.share", "actorId": "cand-45fdf92c", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.586801+00:00", "eventType": "candidate.share", "actorId": "cand-45fdf92c", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.587023+00:00", "eventType": "candidate.created", "actorId": "cand-2eeaa9ad", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.587161+00:00", "eventType": "candidate.share", "actorId": "cand-2eeaa9ad", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.587292+00:00", "eventType": "candidate.share", "actorId": "cand-2eeaa9ad", "payload": {"employerId": "emp-9ffccb45"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.587429+00:00", "eventType": "candidate.share", "actorId": "cand-2eeaa9ad", "payload": {"employerId": "emp-50ebbcd4"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:18:58.587564+00:00", "eventType": "candidate.share", "actorId": "cand-2eeaa9ad", "payload": {"employerId": "emp-b53bc35d"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.069055+00:00", "eventType": "employer.created", "actorId": "emp-14562fec", "payload": {"name": "TechCorp Inc"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.069317+00:00", "eventType": "employer.created", "actorId": "emp-9b5f5ae0", "payload": {"name": "DataSystems LLC"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.069444+00:00", "eventType": "employer.created", "actorId": "emp-03574bab", "payload": {"name": "CodeFactory"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.072768+00:00", "eventType": "candidate.created", "actorId": "cand-ee263db1", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.073102+00:00", "eventType": "candidate.share", "actorId": "cand-ee263db1", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.073284+00:00", "eventType": "candidate.share", "actorId": "cand-ee263db1", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.073875+00:00", "eventType": "candidate.share", "actorId": "cand-ee263db1", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.074024+00:00", "eventType": "candidate.share", "actorId": "cand-ee263db1", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.074286+00:00", "eventType": "candidate.created", "actorId": "cand-2e7a3e08", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.074443+00:00", "eventType": "candidate.share", "actorId": "cand-2e7a3e08", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.074587+00:00", "eventType": "candidate.share", "actorId": "cand-2e7a3e08", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.074722+00:00", "eventType": "candidate.share", "actorId": "cand-2e7a3e08", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.074873+00:00", "eventType": "candidate.share", "actorId": "cand-2e7a3e08", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.075093+00:00", "eventType": "candidate.created", "actorId": "cand-6b584d41", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.075234+00:00", "eventType": "candidate.share", "actorId": "cand-6b584d41", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.075371+00:00", "eventType": "candidate.share", "actorId": "cand-6b584d41", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.075525+00:00", "eventType": "candidate.share", "actorId": "cand-6b584d41", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.075661+00:00", "eventType": "candidate.share", "actorId": "cand-6b584d41", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.075864+00:00", "eventType": "candidate.created", "actorId": "cand-451faac8", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.075996+00:00", "eventType": "candidate.share", "actorId": "cand-451faac8", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.076125+00:00", "eventType": "candidate.share", "actorId": "cand-451faac8", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.076255+00:00", "eventType": "candidate.share", "actorId": "cand-451faac8", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.076380+00:00", "eventType": "candidate.share", "actorId": "cand-451faac8", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.076578+00:00", "eventType": "candidate.created", "actorId": "cand-e5f002de", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.076711+00:00", "eventType": "candidate.share", "actorId": "cand-e5f002de", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.076843+00:00", "eventType": "candidate.share", "actorId": "cand-e5f002de", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.076981+00:00", "eventType": "candidate.share", "actorId": "cand-e5f002de", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.077106+00:00", "eventType": "candidate.share", "actorId": "cand-e5f002de", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.077311+00:00", "eventType": "candidate.created", "actorId": "cand-35157a9f", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.077451+00:00", "eventType": "candidate.share", "actorId": "cand-35157a9f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.077585+00:00", "eventType": "candidate.share", "actorId": "cand-35157a9f", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.077705+00:00", "eventType": "candidate.share", "actorId": "cand-35157a9f", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.077834+00:00", "eventType": "candidate.share", "actorId": "cand-35157a9f", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.078233+00:00", "eventType": "candidate.created", "actorId": "cand-74216bc5", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.078595+00:00", "eventType": "candidate.share", "actorId": "cand-74216bc5", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.078784+00:00", "eventType": "candidate.share", "actorId": "cand-74216bc5", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.078932+00:00", "eventType": "candidate.share", "actorId": "cand-74216bc5", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.079072+00:00", "eventType": "candidate.share", "actorId": "cand-74216bc5", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.079332+00:00", "eventType": "candidate.created", "actorId": "cand-b1c25898", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.079492+00:00", "eventType": "candidate.share", "actorId": "cand-b1c25898", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.079812+00:00", "eventType": "candidate.share", "actorId": "cand-b1c25898", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.080143+00:00", "eventType": "candidate.share", "actorId": "cand-b1c25898", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.080362+00:00", "eventType": "candidate.share", "actorId": "cand-b1c25898", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.080635+00:00", "eventType": "candidate.created", "actorId": "cand-4405c84a", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.080804+00:00", "eventType": "candidate.share", "actorId": "cand-4405c84a", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.080950+00:00", "eventType": "candidate.share", "actorId": "cand-4405c84a", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.081075+00:00", "eventType": "candidate.share", "actorId": "cand-4405c84a", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.081189+00:00", "eventType": "candidate.share", "actorId": "cand-4405c84a", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.081407+00:00", "eventType": "candidate.created", "actorId": "cand-58bc20f4", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.081545+00:00", "eventType": "candidate.share", "actorId": "cand-58bc20f4", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.081676+00:00", "eventType": "candidate.share", "actorId": "cand-58bc20f4", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.081803+00:00", "eventType": "candidate.share", "actorId": "cand-58bc20f4", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.081926+00:00", "eventType": "candidate.share", "actorId": "cand-58bc20f4", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.082137+00:00", "eventType": "candidate.created", "actorId": "cand-380e12a3", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.082275+00:00", "eventType": "candidate.share", "actorId": "cand-380e12a3", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.082394+00:00", "eventType": "candidate.share", "actorId": "cand-380e12a3", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.082515+00:00", "eventType": "candidate.share", "actorId": "cand-380e12a3", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.082641+00:00", "eventType": "candidate.share", "actorId": "cand-380e12a3", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.082838+00:00", "eventType": "candidate.created", "actorId": "cand-9e156e5d", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.082976+00:00", "eventType": "candidate.share", "actorId": "cand-9e156e5d", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.083101+00:00", "eventType": "candidate.share", "actorId": "cand-9e156e5d", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.083235+00:00", "eventType": "candidate.share", "actorId": "cand-9e156e5d", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.083394+00:00", "eventType": "candidate.share", "actorId": "cand-9e156e5d", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.083599+00:00", "eventType": "candidate.created", "actorId": "cand-cdb5c385", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.083726+00:00", "eventType": "candidate.share", "actorId": "cand-cdb5c385", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.083847+00:00", "eventType": "candidate.share", "actorId": "cand-cdb5c385", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.083966+00:00", "eventType": "candidate.share", "actorId": "cand-cdb5c385", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.084095+00:00", "eventType": "candidate.share", "actorId": "cand-cdb5c385", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.084293+00:00", "eventType": "candidate.created", "actorId": "cand-b66ee8c9", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.084430+00:00", "eventType": "candidate.share", "actorId": "cand-b66ee8c9", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.084586+00:00", "eventType": "candidate.share", "actorId": "cand-b66ee8c9", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.084703+00:00", "eventType": "candidate.share", "actorId": "cand-b66ee8c9", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.084831+00:00", "eventType": "candidate.share", "actorId": "cand-b66ee8c9", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.085020+00:00", "eventType": "candidate.created", "actorId": "cand-75c538fb", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.085156+00:00", "eventType": "candidate.share", "actorId": "cand-75c538fb", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.085284+00:00", "eventType": "candidate.share", "actorId": "cand-75c538fb", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.085403+00:00", "eventType": "candidate.share", "actorId": "cand-75c538fb", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.085524+00:00", "eventType": "candidate.share", "actorId": "cand-75c538fb", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.085751+00:00", "eventType": "candidate.created", "actorId": "cand-d56ae826", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.085890+00:00", "eventType": "candidate.share", "actorId": "cand-d56ae826", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.086015+00:00", "eventType": "candidate.share", "actorId": "cand-d56ae826", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.086131+00:00", "eventType": "candidate.share", "actorId": "cand-d56ae826", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.086251+00:00", "eventType": "candidate.share", "actorId": "cand-d56ae826", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.086465+00:00", "eventType": "candidate.created", "actorId": "cand-fa7381ce", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.086840+00:00", "eventType": "candidate.share", "actorId": "cand-fa7381ce", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.087026+00:00", "eventType": "candidate.share", "actorId": "cand-fa7381ce", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.087202+00:00", "eventType": "candidate.share", "actorId": "cand-fa7381ce", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.087365+00:00", "eventType": "candidate.share", "actorId": "cand-fa7381ce", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.087642+00:00", "eventType": "candidate.created", "actorId": "cand-080985e8", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.087816+00:00", "eventType": "candidate.share", "actorId": "cand-080985e8", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.087980+00:00", "eventType": "candidate.share", "actorId": "cand-080985e8", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.088123+00:00", "eventType": "candidate.share", "actorId": "cand-080985e8", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.088248+00:00", "eventType": "candidate.share", "actorId": "cand-080985e8", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.088465+00:00", "eventType": "candidate.created", "actorId": "cand-c1693259", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.088637+00:00", "eventType": "candidate.share", "actorId": "cand-c1693259", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.088822+00:00", "eventType": "candidate.share", "actorId": "cand-c1693259", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.088965+00:00", "eventType": "candidate.share", "actorId": "cand-c1693259", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.089093+00:00", "eventType": "candidate.share", "actorId": "cand-c1693259", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.089297+00:00", "eventType": "candidate.created", "actorId": "cand-d026fa95", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.089448+00:00", "eventType": "candidate.share", "actorId": "cand-d026fa95", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.089587+00:00", "eventType": "candidate.share", "actorId": "cand-d026fa95", "payload": {"employerId": "emp-14562fec"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.089718+00:00", "eventType": "candidate.share", "actorId": "cand-d026fa95", "payload": {"employerId": "emp-9b5f5ae0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:22:39.089877+00:00", "eventType": "candidate.share", "actorId": "cand-d026fa95", "payload": {"employerId": "emp-03574bab"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.118981+00:00", "eventType": "candidate.created", "actorId": "cand-af4f7eea", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.119466+00:00", "eventType": "candidate.share", "actorId": "cand-af4f7eea", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.119662+00:00", "eventType": "candidate.created", "actorId": "cand-5339afc1", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.119783+00:00", "eventType": "candidate.share", "actorId": "cand-5339afc1", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.119991+00:00", "eventType": "candidate.created", "actorId": "cand-15254504", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.120176+00:00", "eventType": "candidate.share", "actorId": "cand-15254504", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.120383+00:00", "eventType": "candidate.created", "actorId": "cand-08952bee", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.120508+00:00", "eventType": "candidate.share", "actorId": "cand-08952bee", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.120697+00:00", "eventType": "candidate.created", "actorId": "cand-8e52c417", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.120803+00:00", "eventType": "candidate.share", "actorId": "cand-8e52c417", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.120961+00:00", "eventType": "candidate.created", "actorId": "cand-d3b94f01", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.121068+00:00", "eventType": "candidate.share", "actorId": "cand-d3b94f01", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.121223+00:00", "eventType": "candidate.created", "actorId": "cand-b22b47a0", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.121316+00:00", "eventType": "candidate.share", "actorId": "cand-b22b47a0", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.121466+00:00", "eventType": "candidate.created", "actorId": "cand-ca490804", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.121588+00:00", "eventType": "candidate.share", "actorId": "cand-ca490804", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.121775+00:00", "eventType": "candidate.created", "actorId": "cand-7d8f114a", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.121896+00:00", "eventType": "candidate.share", "actorId": "cand-7d8f114a", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.122059+00:00", "eventType": "candidate.created", "actorId": "cand-5c875a54", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.122172+00:00", "eventType": "candidate.share", "actorId": "cand-5c875a54", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.122338+00:00", "eventType": "candidate.created", "actorId": "cand-c27be263", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.122452+00:00", "eventType": "candidate.share", "actorId": "cand-c27be263", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.122630+00:00", "eventType": "candidate.created", "actorId": "cand-474c138d", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.122741+00:00", "eventType": "candidate.share", "actorId": "cand-474c138d", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.122907+00:00", "eventType": "candidate.created", "actorId": "cand-069f0545", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.123114+00:00", "eventType": "candidate.share", "actorId": "cand-069f0545", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.123288+00:00", "eventType": "candidate.created", "actorId": "cand-e2a9caff", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.123397+00:00", "eventType": "candidate.share", "actorId": "cand-e2a9caff", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.123567+00:00", "eventType": "candidate.created", "actorId": "cand-e5f76cd1", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.123676+00:00", "eventType": "candidate.share", "actorId": "cand-e5f76cd1", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.123841+00:00", "eventType": "candidate.created", "actorId": "cand-7aee5a68", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.123948+00:00", "eventType": "candidate.share", "actorId": "cand-7aee5a68", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.124119+00:00", "eventType": "candidate.created", "actorId": "cand-578a062a", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.124241+00:00", "eventType": "candidate.share", "actorId": "cand-578a062a", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.124416+00:00", "eventType": "candidate.created", "actorId": "cand-2542c460", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.124530+00:00", "eventType": "candidate.share", "actorId": "cand-2542c460", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.124701+00:00", "eventType": "candidate.created", "actorId": "cand-56c0ae86", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.124812+00:00", "eventType": "candidate.share", "actorId": "cand-56c0ae86", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.124983+00:00", "eventType": "candidate.created", "actorId": "cand-91774d7f", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:10.125089+00:00", "eventType": "candidate.share", "actorId": "cand-91774d7f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:23:19.247054+00:00", "eventType": "employer.created", "actorId": "emp-c1608974", "payload": {"name": "Demo Company"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.516878+00:00", "eventType": "candidate.created", "actorId": "cand-9cb9af80", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.517177+00:00", "eventType": "candidate.share", "actorId": "cand-9cb9af80", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.517481+00:00", "eventType": "candidate.created", "actorId": "cand-5b8d9b72", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.517602+00:00", "eventType": "candidate.share", "actorId": "cand-5b8d9b72", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.517768+00:00", "eventType": "candidate.created", "actorId": "cand-6fd11baa", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.517882+00:00", "eventType": "candidate.share", "actorId": "cand-6fd11baa", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.518030+00:00", "eventType": "candidate.created", "actorId": "cand-1bba4d75", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.518135+00:00", "eventType": "candidate.share", "actorId": "cand-1bba4d75", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.518280+00:00", "eventType": "candidate.created", "actorId": "cand-61fdebd6", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.518393+00:00", "eventType": "candidate.share", "actorId": "cand-61fdebd6", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.518539+00:00", "eventType": "candidate.created", "actorId": "cand-77d3c320", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.518661+00:00", "eventType": "candidate.share", "actorId": "cand-77d3c320", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.518826+00:00", "eventType": "candidate.created", "actorId": "cand-ba026696", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.518926+00:00", "eventType": "candidate.share", "actorId": "cand-ba026696", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.519084+00:00", "eventType": "candidate.created", "actorId": "cand-6d55048a", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.519183+00:00", "eventType": "candidate.share", "actorId": "cand-6d55048a", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.519342+00:00", "eventType": "candidate.created", "actorId": "cand-b0e5ed8e", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.519442+00:00", "eventType": "candidate.share", "actorId": "cand-b0e5ed8e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.519591+00:00", "eventType": "candidate.created", "actorId": "cand-9f87ed95", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.519734+00:00", "eventType": "candidate.share", "actorId": "cand-9f87ed95", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.519951+00:00", "eventType": "candidate.created", "actorId": "cand-572a7941", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.520083+00:00", "eventType": "candidate.share", "actorId": "cand-572a7941", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.520254+00:00", "eventType": "candidate.created", "actorId": "cand-fe198d67", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.520373+00:00", "eventType": "candidate.share", "actorId": "cand-fe198d67", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.520568+00:00", "eventType": "candidate.created", "actorId": "cand-8b93abb0", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.520691+00:00", "eventType": "candidate.share", "actorId": "cand-8b93abb0", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.520862+00:00", "eventType": "candidate.created", "actorId": "cand-167a4ecd", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.520974+00:00", "eventType": "candidate.share", "actorId": "cand-167a4ecd", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.521160+00:00", "eventType": "candidate.created", "actorId": "cand-0ebb6b46", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.521371+00:00", "eventType": "candidate.share", "actorId": "cand-0ebb6b46", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.521539+00:00", "eventType": "candidate.created", "actorId": "cand-3bcae471", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.521636+00:00", "eventType": "candidate.share", "actorId": "cand-3bcae471", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.521789+00:00", "eventType": "candidate.created", "actorId": "cand-3e54b605", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.521883+00:00", "eventType": "candidate.share", "actorId": "cand-3e54b605", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.522047+00:00", "eventType": "candidate.created", "actorId": "cand-822e4c0e", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.522159+00:00", "eventType": "candidate.share", "actorId": "cand-822e4c0e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.522350+00:00", "eventType": "candidate.created", "actorId": "cand-7da61a48", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.522461+00:00", "eventType": "candidate.share", "actorId": "cand-7da61a48", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.522632+00:00", "eventType": "candidate.created", "actorId": "cand-670945de", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:12.522741+00:00", "eventType": "candidate.share", "actorId": "cand-670945de", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:28.444252+00:00", "eventType": "job.upserted", "actorId": "emp-demo-test", "payload": {"jobId": "test-job-1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:30.371535+00:00", "eventType": "job.filter_run", "actorId": "emp-demo-test", "payload": {"jobId": "test-job-1", "resultCount": "0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.094114+00:00", "eventType": "candidate.created", "actorId": "cand-0e466e8f", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.094704+00:00", "eventType": "candidate.share", "actorId": "cand-0e466e8f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.094975+00:00", "eventType": "candidate.created", "actorId": "cand-b6be076b", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.095108+00:00", "eventType": "candidate.share", "actorId": "cand-b6be076b", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.095307+00:00", "eventType": "candidate.created", "actorId": "cand-027bcda4", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.095427+00:00", "eventType": "candidate.share", "actorId": "cand-027bcda4", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.095620+00:00", "eventType": "candidate.created", "actorId": "cand-7ded2a8c", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.095732+00:00", "eventType": "candidate.share", "actorId": "cand-7ded2a8c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.095918+00:00", "eventType": "candidate.created", "actorId": "cand-08162000", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.096037+00:00", "eventType": "candidate.share", "actorId": "cand-08162000", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.096228+00:00", "eventType": "candidate.created", "actorId": "cand-688f48b2", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.096370+00:00", "eventType": "candidate.share", "actorId": "cand-688f48b2", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.096568+00:00", "eventType": "candidate.created", "actorId": "cand-97af2aa0", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.096680+00:00", "eventType": "candidate.share", "actorId": "cand-97af2aa0", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.096902+00:00", "eventType": "candidate.created", "actorId": "cand-1968aa38", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.097083+00:00", "eventType": "candidate.share", "actorId": "cand-1968aa38", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.097314+00:00", "eventType": "candidate.created", "actorId": "cand-bdd96fdc", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.097444+00:00", "eventType": "candidate.share", "actorId": "cand-bdd96fdc", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.097664+00:00", "eventType": "candidate.created", "actorId": "cand-8d7e40fd", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.097785+00:00", "eventType": "candidate.share", "actorId": "cand-8d7e40fd", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.097999+00:00", "eventType": "candidate.created", "actorId": "cand-17102640", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.098119+00:00", "eventType": "candidate.share", "actorId": "cand-17102640", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.098333+00:00", "eventType": "candidate.created", "actorId": "cand-9b8a965e", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.098451+00:00", "eventType": "candidate.share", "actorId": "cand-9b8a965e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.098689+00:00", "eventType": "candidate.created", "actorId": "cand-79c7aeac", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.098824+00:00", "eventType": "candidate.share", "actorId": "cand-79c7aeac", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.099042+00:00", "eventType": "candidate.created", "actorId": "cand-26c3d697", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.099159+00:00", "eventType": "candidate.share", "actorId": "cand-26c3d697", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.099362+00:00", "eventType": "candidate.created", "actorId": "cand-31506763", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.099476+00:00", "eventType": "candidate.share", "actorId": "cand-31506763", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.099697+00:00", "eventType": "candidate.created", "actorId": "cand-d2a0aa6a", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.099824+00:00", "eventType": "candidate.share", "actorId": "cand-d2a0aa6a", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.100031+00:00", "eventType": "candidate.created", "actorId": "cand-89f90915", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.100144+00:00", "eventType": "candidate.share", "actorId": "cand-89f90915", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.100350+00:00", "eventType": "candidate.created", "actorId": "cand-4afa32d5", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.100465+00:00", "eventType": "candidate.share", "actorId": "cand-4afa32d5", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.100675+00:00", "eventType": "candidate.created", "actorId": "cand-64c490af", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.100796+00:00", "eventType": "candidate.share", "actorId": "cand-64c490af", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.101005+00:00", "eventType": "candidate.created", "actorId": "cand-07b08a40", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:47.101117+00:00", "eventType": "candidate.share", "actorId": "cand-07b08a40", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.540079+00:00", "eventType": "candidate.created", "actorId": "cand-643a7664", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.540414+00:00", "eventType": "candidate.share", "actorId": "cand-643a7664", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.540634+00:00", "eventType": "candidate.created", "actorId": "cand-69c9b5e9", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.540758+00:00", "eventType": "candidate.share", "actorId": "cand-69c9b5e9", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.540918+00:00", "eventType": "candidate.created", "actorId": "cand-b0ccff67", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.541029+00:00", "eventType": "candidate.share", "actorId": "cand-b0ccff67", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.541188+00:00", "eventType": "candidate.created", "actorId": "cand-eed8583c", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.541301+00:00", "eventType": "candidate.share", "actorId": "cand-eed8583c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.541454+00:00", "eventType": "candidate.created", "actorId": "cand-66cada85", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.541572+00:00", "eventType": "candidate.share", "actorId": "cand-66cada85", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.541730+00:00", "eventType": "candidate.created", "actorId": "cand-085edc81", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.541835+00:00", "eventType": "candidate.share", "actorId": "cand-085edc81", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.541993+00:00", "eventType": "candidate.created", "actorId": "cand-eec807a9", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.542103+00:00", "eventType": "candidate.share", "actorId": "cand-eec807a9", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.542260+00:00", "eventType": "candidate.created", "actorId": "cand-b8b33bc2", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.542367+00:00", "eventType": "candidate.share", "actorId": "cand-b8b33bc2", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.542531+00:00", "eventType": "candidate.created", "actorId": "cand-6f2c3edb", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.542639+00:00", "eventType": "candidate.share", "actorId": "cand-6f2c3edb", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.542799+00:00", "eventType": "candidate.created", "actorId": "cand-37d983c6", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.542985+00:00", "eventType": "candidate.share", "actorId": "cand-37d983c6", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.543147+00:00", "eventType": "candidate.created", "actorId": "cand-c4729572", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.543255+00:00", "eventType": "candidate.share", "actorId": "cand-c4729572", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.543415+00:00", "eventType": "candidate.created", "actorId": "cand-deeb7ee8", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.543519+00:00", "eventType": "candidate.share", "actorId": "cand-deeb7ee8", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.543682+00:00", "eventType": "candidate.created", "actorId": "cand-799e8c87", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.543857+00:00", "eventType": "candidate.share", "actorId": "cand-799e8c87", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.544105+00:00", "eventType": "candidate.created", "actorId": "cand-a171d4af", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.544237+00:00", "eventType": "candidate.share", "actorId": "cand-a171d4af", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.544427+00:00", "eventType": "candidate.created", "actorId": "cand-a32bd7ae", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.544541+00:00", "eventType": "candidate.share", "actorId": "cand-a32bd7ae", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.546638+00:00", "eventType": "candidate.created", "actorId": "cand-47557acd", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.547536+00:00", "eventType": "candidate.share", "actorId": "cand-47557acd", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.548201+00:00", "eventType": "candidate.created", "actorId": "cand-7d5e86fa", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.548415+00:00", "eventType": "candidate.share", "actorId": "cand-7d5e86fa", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.548653+00:00", "eventType": "candidate.created", "actorId": "cand-a08f4f44", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.548802+00:00", "eventType": "candidate.share", "actorId": "cand-a08f4f44", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.549019+00:00", "eventType": "candidate.created", "actorId": "cand-74cc9187", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.549157+00:00", "eventType": "candidate.share", "actorId": "cand-74cc9187", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.549515+00:00", "eventType": "candidate.created", "actorId": "cand-2ffa14f3", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:24:52.549807+00:00", "eventType": "candidate.share", "actorId": "cand-2ffa14f3", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:07.189088+00:00", "eventType": "job.upserted", "actorId": "emp-demo-test", "payload": {"jobId": "demo-python-job"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:08.771479+00:00", "eventType": "job.filter_run", "actorId": "emp-demo-test", "payload": {"jobId": "demo-python-job", "resultCount": "0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.481750+00:00", "eventType": "candidate.created", "actorId": "cand-e8d5355f", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.482016+00:00", "eventType": "candidate.share", "actorId": "cand-e8d5355f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.482316+00:00", "eventType": "candidate.created", "actorId": "cand-1193eb65", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.482433+00:00", "eventType": "candidate.share", "actorId": "cand-1193eb65", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.482583+00:00", "eventType": "candidate.created", "actorId": "cand-7de64f6e", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.482702+00:00", "eventType": "candidate.share", "actorId": "cand-7de64f6e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.482850+00:00", "eventType": "candidate.created", "actorId": "cand-49c5ca6c", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.482961+00:00", "eventType": "candidate.share", "actorId": "cand-49c5ca6c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.483107+00:00", "eventType": "candidate.created", "actorId": "cand-7fc77ab9", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.483214+00:00", "eventType": "candidate.share", "actorId": "cand-7fc77ab9", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.483366+00:00", "eventType": "candidate.created", "actorId": "cand-59f1a93c", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.483484+00:00", "eventType": "candidate.share", "actorId": "cand-59f1a93c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.483634+00:00", "eventType": "candidate.created", "actorId": "cand-b52f2b26", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.483773+00:00", "eventType": "candidate.share", "actorId": "cand-b52f2b26", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.483950+00:00", "eventType": "candidate.created", "actorId": "cand-69ba742e", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.484062+00:00", "eventType": "candidate.share", "actorId": "cand-69ba742e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.484229+00:00", "eventType": "candidate.created", "actorId": "cand-35064202", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.484339+00:00", "eventType": "candidate.share", "actorId": "cand-35064202", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.484634+00:00", "eventType": "candidate.created", "actorId": "cand-0d4f6c6a", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.484905+00:00", "eventType": "candidate.share", "actorId": "cand-0d4f6c6a", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.485216+00:00", "eventType": "candidate.created", "actorId": "cand-29daa2f1", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.485362+00:00", "eventType": "candidate.share", "actorId": "cand-29daa2f1", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.485551+00:00", "eventType": "candidate.created", "actorId": "cand-09753fe6", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.485671+00:00", "eventType": "candidate.share", "actorId": "cand-09753fe6", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.485844+00:00", "eventType": "candidate.created", "actorId": "cand-c0d9c1ed", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.485958+00:00", "eventType": "candidate.share", "actorId": "cand-c0d9c1ed", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.486221+00:00", "eventType": "candidate.created", "actorId": "cand-b0574add", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.486350+00:00", "eventType": "candidate.share", "actorId": "cand-b0574add", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.486529+00:00", "eventType": "candidate.created", "actorId": "cand-44a52814", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.486638+00:00", "eventType": "candidate.share", "actorId": "cand-44a52814", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.486809+00:00", "eventType": "candidate.created", "actorId": "cand-f3c09a8e", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.486919+00:00", "eventType": "candidate.share", "actorId": "cand-f3c09a8e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.487086+00:00", "eventType": "candidate.created", "actorId": "cand-f2408fcd", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.487196+00:00", "eventType": "candidate.share", "actorId": "cand-f2408fcd", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.487372+00:00", "eventType": "candidate.created", "actorId": "cand-e98ddc34", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.487485+00:00", "eventType": "candidate.share", "actorId": "cand-e98ddc34", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.487664+00:00", "eventType": "candidate.created", "actorId": "cand-e2311b0f", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.487784+00:00", "eventType": "candidate.share", "actorId": "cand-e2311b0f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.487998+00:00", "eventType": "candidate.created", "actorId": "cand-1452dca7", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:25:29.488129+00:00", "eventType": "candidate.share", "actorId": "cand-1452dca7", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.282304+00:00", "eventType": "candidate.created", "actorId": "cand-e29142ff", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.283007+00:00", "eventType": "candidate.share", "actorId": "cand-e29142ff", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.283319+00:00", "eventType": "candidate.created", "actorId": "cand-d4fb27ed", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.283493+00:00", "eventType": "candidate.share", "actorId": "cand-d4fb27ed", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.283724+00:00", "eventType": "candidate.created", "actorId": "cand-972223c9", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.283888+00:00", "eventType": "candidate.share", "actorId": "cand-972223c9", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.284100+00:00", "eventType": "candidate.created", "actorId": "cand-6fb203c3", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.284260+00:00", "eventType": "candidate.share", "actorId": "cand-6fb203c3", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.284461+00:00", "eventType": "candidate.created", "actorId": "cand-aabd19e6", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.284608+00:00", "eventType": "candidate.share", "actorId": "cand-aabd19e6", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.284802+00:00", "eventType": "candidate.created", "actorId": "cand-d3efef8b", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.284951+00:00", "eventType": "candidate.share", "actorId": "cand-d3efef8b", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.285169+00:00", "eventType": "candidate.created", "actorId": "cand-19bca9dc", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.285300+00:00", "eventType": "candidate.share", "actorId": "cand-19bca9dc", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.285491+00:00", "eventType": "candidate.created", "actorId": "cand-565610e5", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.285630+00:00", "eventType": "candidate.share", "actorId": "cand-565610e5", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.285827+00:00", "eventType": "candidate.created", "actorId": "cand-5906f8ab", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.285981+00:00", "eventType": "candidate.share", "actorId": "cand-5906f8ab", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.286183+00:00", "eventType": "candidate.created", "actorId": "cand-f3d99cf7", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.286352+00:00", "eventType": "candidate.share", "actorId": "cand-f3d99cf7", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.286555+00:00", "eventType": "candidate.created", "actorId": "cand-13e525fc", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.286702+00:00", "eventType": "candidate.share", "actorId": "cand-13e525fc", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.286906+00:00", "eventType": "candidate.created", "actorId": "cand-58ed6ec9", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.287042+00:00", "eventType": "candidate.share", "actorId": "cand-58ed6ec9", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.287259+00:00", "eventType": "candidate.created", "actorId": "cand-064af4bc", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.287417+00:00", "eventType": "candidate.share", "actorId": "cand-064af4bc", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.287627+00:00", "eventType": "candidate.created", "actorId": "cand-898fd1e5", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.287758+00:00", "eventType": "candidate.share", "actorId": "cand-898fd1e5", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.287985+00:00", "eventType": "candidate.created", "actorId": "cand-9e8a98ca", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.288121+00:00", "eventType": "candidate.share", "actorId": "cand-9e8a98ca", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.288326+00:00", "eventType": "candidate.created", "actorId": "cand-50e90a43", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.288470+00:00", "eventType": "candidate.share", "actorId": "cand-50e90a43", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.288673+00:00", "eventType": "candidate.created", "actorId": "cand-8fe48557", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.288817+00:00", "eventType": "candidate.share", "actorId": "cand-8fe48557", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.289148+00:00", "eventType": "candidate.created", "actorId": "cand-121ca219", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.289374+00:00", "eventType": "candidate.share", "actorId": "cand-121ca219", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.289641+00:00", "eventType": "candidate.created", "actorId": "cand-341a8fae", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.289804+00:00", "eventType": "candidate.share", "actorId": "cand-341a8fae", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.290033+00:00", "eventType": "candidate.created", "actorId": "cand-6b545f76", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:01.290219+00:00", "eventType": "candidate.share", "actorId": "cand-6b545f76", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:08.315123+00:00", "eventType": "job.upserted", "actorId": "emp-demo-test", "payload": {"jobId": "demo-python-job"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:23.360223+00:00", "eventType": "job.filter_run", "actorId": "emp-demo-test", "payload": {"jobId": "demo-python-job", "resultCount": "0"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.325048+00:00", "eventType": "candidate.created", "actorId": "cand-67c6a652", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.325564+00:00", "eventType": "candidate.share", "actorId": "cand-67c6a652", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.325906+00:00", "eventType": "candidate.created", "actorId": "cand-42434935", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.326105+00:00", "eventType": "candidate.share", "actorId": "cand-42434935", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.326368+00:00", "eventType": "candidate.created", "actorId": "cand-0755958e", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.326582+00:00", "eventType": "candidate.share", "actorId": "cand-0755958e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.327050+00:00", "eventType": "candidate.created", "actorId": "cand-269c5cc9", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.327615+00:00", "eventType": "candidate.share", "actorId": "cand-269c5cc9", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.327846+00:00", "eventType": "candidate.created", "actorId": "cand-f0933e3b", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.328008+00:00", "eventType": "candidate.share", "actorId": "cand-f0933e3b", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.328213+00:00", "eventType": "candidate.created", "actorId": "cand-bb628d1d", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.328750+00:00", "eventType": "candidate.share", "actorId": "cand-bb628d1d", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.328993+00:00", "eventType": "candidate.created", "actorId": "cand-ff48e617", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.329168+00:00", "eventType": "candidate.share", "actorId": "cand-ff48e617", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.329374+00:00", "eventType": "candidate.created", "actorId": "cand-609c5fb2", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.329700+00:00", "eventType": "candidate.share", "actorId": "cand-609c5fb2", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.330300+00:00", "eventType": "candidate.created", "actorId": "cand-ac134af8", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.330513+00:00", "eventType": "candidate.share", "actorId": "cand-ac134af8", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.330747+00:00", "eventType": "candidate.created", "actorId": "cand-90f3969b", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.330951+00:00", "eventType": "candidate.share", "actorId": "cand-90f3969b", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.331349+00:00", "eventType": "candidate.created", "actorId": "cand-48d4f84f", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.331560+00:00", "eventType": "candidate.share", "actorId": "cand-48d4f84f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.331784+00:00", "eventType": "candidate.created", "actorId": "cand-62567919", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.331939+00:00", "eventType": "candidate.share", "actorId": "cand-62567919", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.332140+00:00", "eventType": "candidate.created", "actorId": "cand-5eb438fa", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.332283+00:00", "eventType": "candidate.share", "actorId": "cand-5eb438fa", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.332491+00:00", "eventType": "candidate.created", "actorId": "cand-b54eaefa", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.332654+00:00", "eventType": "candidate.share", "actorId": "cand-b54eaefa", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.332903+00:00", "eventType": "candidate.created", "actorId": "cand-f8ccb46b", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.333087+00:00", "eventType": "candidate.share", "actorId": "cand-f8ccb46b", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.333299+00:00", "eventType": "candidate.created", "actorId": "cand-c4bad291", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.333555+00:00", "eventType": "candidate.share", "actorId": "cand-c4bad291", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.333792+00:00", "eventType": "candidate.created", "actorId": "cand-a04e0ef5", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.333962+00:00", "eventType": "candidate.share", "actorId": "cand-a04e0ef5", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.334174+00:00", "eventType": "candidate.created", "actorId": "cand-86ce3ec5", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.334339+00:00", "eventType": "candidate.share", "actorId": "cand-86ce3ec5", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.334552+00:00", "eventType": "candidate.created", "actorId": "cand-116f5e19", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.334693+00:00", "eventType": "candidate.share", "actorId": "cand-116f5e19", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.334895+00:00", "eventType": "candidate.created", "actorId": "cand-597eda5f", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.335046+00:00", "eventType": "candidate.share", "actorId": "cand-597eda5f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.896872+00:00", "eventType": "candidate.created", "actorId": "cand-ed899561", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.897231+00:00", "eventType": "candidate.share", "actorId": "cand-ed899561", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.897490+00:00", "eventType": "candidate.created", "actorId": "cand-ee21495d", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.897627+00:00", "eventType": "candidate.share", "actorId": "cand-ee21495d", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.897838+00:00", "eventType": "candidate.created", "actorId": "cand-503e0995", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.897977+00:00", "eventType": "candidate.share", "actorId": "cand-503e0995", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.898172+00:00", "eventType": "candidate.created", "actorId": "cand-1498ff14", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.898299+00:00", "eventType": "candidate.share", "actorId": "cand-1498ff14", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.898500+00:00", "eventType": "candidate.created", "actorId": "cand-6a21bf90", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.898620+00:00", "eventType": "candidate.share", "actorId": "cand-6a21bf90", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.898798+00:00", "eventType": "candidate.created", "actorId": "cand-fe625f20", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.898939+00:00", "eventType": "candidate.share", "actorId": "cand-fe625f20", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.899136+00:00", "eventType": "candidate.created", "actorId": "cand-91975276", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.899265+00:00", "eventType": "candidate.share", "actorId": "cand-91975276", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.899474+00:00", "eventType": "candidate.created", "actorId": "cand-def27a4c", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.899593+00:00", "eventType": "candidate.share", "actorId": "cand-def27a4c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.899776+00:00", "eventType": "candidate.created", "actorId": "cand-62049ab5", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.899891+00:00", "eventType": "candidate.share", "actorId": "cand-62049ab5", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.900122+00:00", "eventType": "candidate.created", "actorId": "cand-0f511106", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.900241+00:00", "eventType": "candidate.share", "actorId": "cand-0f511106", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.900448+00:00", "eventType": "candidate.created", "actorId": "cand-aacdd16f", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.900569+00:00", "eventType": "candidate.share", "actorId": "cand-aacdd16f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.900779+00:00", "eventType": "candidate.created", "actorId": "cand-b9035fda", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.900898+00:00", "eventType": "candidate.share", "actorId": "cand-b9035fda", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.901103+00:00", "eventType": "candidate.created", "actorId": "cand-5d58224e", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.901231+00:00", "eventType": "candidate.share", "actorId": "cand-5d58224e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.901529+00:00", "eventType": "candidate.created", "actorId": "cand-6fd20f44", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.901652+00:00", "eventType": "candidate.share", "actorId": "cand-6fd20f44", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.901865+00:00", "eventType": "candidate.created", "actorId": "cand-264262ac", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.901983+00:00", "eventType": "candidate.share", "actorId": "cand-264262ac", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.902194+00:00", "eventType": "candidate.created", "actorId": "cand-5d014668", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.902326+00:00", "eventType": "candidate.share", "actorId": "cand-5d014668", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.902539+00:00", "eventType": "candidate.created", "actorId": "cand-1bb13445", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.902657+00:00", "eventType": "candidate.share", "actorId": "cand-1bb13445", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.902876+00:00", "eventType": "candidate.created", "actorId": "cand-ae36db78", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.903000+00:00", "eventType": "candidate.share", "actorId": "cand-ae36db78", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.903216+00:00", "eventType": "candidate.created", "actorId": "cand-31be0476", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.903341+00:00", "eventType": "candidate.share", "actorId": "cand-31be0476", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.903624+00:00", "eventType": "candidate.created", "actorId": "cand-22c43b79", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:26:39.903903+00:00", "eventType": "candidate.share", "actorId": "cand-22c43b79", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.218577+00:00", "eventType": "candidate.created", "actorId": "cand-3090bf2c", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.219227+00:00", "eventType": "candidate.share", "actorId": "cand-3090bf2c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.219635+00:00", "eventType": "candidate.created", "actorId": "cand-08949b8f", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.219886+00:00", "eventType": "candidate.share", "actorId": "cand-08949b8f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.220188+00:00", "eventType": "candidate.created", "actorId": "cand-1d8cdaae", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.220372+00:00", "eventType": "candidate.share", "actorId": "cand-1d8cdaae", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.220615+00:00", "eventType": "candidate.created", "actorId": "cand-a77cada8", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.220802+00:00", "eventType": "candidate.share", "actorId": "cand-a77cada8", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.221113+00:00", "eventType": "candidate.created", "actorId": "cand-9e16971f", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.221390+00:00", "eventType": "candidate.share", "actorId": "cand-9e16971f", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.221969+00:00", "eventType": "candidate.created", "actorId": "cand-6a423190", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.222186+00:00", "eventType": "candidate.share", "actorId": "cand-6a423190", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.222462+00:00", "eventType": "candidate.created", "actorId": "cand-4d46342a", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.222657+00:00", "eventType": "candidate.share", "actorId": "cand-4d46342a", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.222922+00:00", "eventType": "candidate.created", "actorId": "cand-6acf20be", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.223115+00:00", "eventType": "candidate.share", "actorId": "cand-6acf20be", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.223391+00:00", "eventType": "candidate.created", "actorId": "cand-c192bd89", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.223634+00:00", "eventType": "candidate.share", "actorId": "cand-c192bd89", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.224369+00:00", "eventType": "candidate.created", "actorId": "cand-61623b98", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.224586+00:00", "eventType": "candidate.share", "actorId": "cand-61623b98", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.224909+00:00", "eventType": "candidate.created", "actorId": "cand-bd315e71", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.225201+00:00", "eventType": "candidate.share", "actorId": "cand-bd315e71", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.225538+00:00", "eventType": "candidate.created", "actorId": "cand-e9ec1a69", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.225734+00:00", "eventType": "candidate.share", "actorId": "cand-e9ec1a69", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.226014+00:00", "eventType": "candidate.created", "actorId": "cand-b7af58c1", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.226220+00:00", "eventType": "candidate.share", "actorId": "cand-b7af58c1", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.226515+00:00", "eventType": "candidate.created", "actorId": "cand-bc9fc5d5", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.226717+00:00", "eventType": "candidate.share", "actorId": "cand-bc9fc5d5", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.227004+00:00", "eventType": "candidate.created", "actorId": "cand-a364f598", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.227208+00:00", "eventType": "candidate.share", "actorId": "cand-a364f598", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.227548+00:00", "eventType": "candidate.created", "actorId": "cand-393f8def", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.227911+00:00", "eventType": "candidate.share", "actorId": "cand-393f8def", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.228188+00:00", "eventType": "candidate.created", "actorId": "cand-7f793790", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.228386+00:00", "eventType": "candidate.share", "actorId": "cand-7f793790", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.228679+00:00", "eventType": "candidate.created", "actorId": "cand-4c7b0c61", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.228870+00:00", "eventType": "candidate.share", "actorId": "cand-4c7b0c61", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.229149+00:00", "eventType": "candidate.created", "actorId": "cand-a6aa20ae", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.229317+00:00", "eventType": "candidate.share", "actorId": "cand-a6aa20ae", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.229593+00:00", "eventType": "candidate.created", "actorId": "cand-bdae000e", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:03.229765+00:00", "eventType": "candidate.share", "actorId": "cand-bdae000e", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:06.820605+00:00", "eventType": "job.upserted", "actorId": "emp-demo-test", "payload": {"jobId": "demo-python-job"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:27:09.117161+00:00", "eventType": "job.filter_run", "actorId": "emp-demo-test", "payload": {"jobId": "demo-python-job", "resultCount": "18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.067751+00:00", "eventType": "candidate.created", "actorId": "cand-88c9f39c", "payload": {"email": "alice.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.068366+00:00", "eventType": "candidate.share", "actorId": "cand-88c9f39c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.068669+00:00", "eventType": "candidate.created", "actorId": "cand-9b64a03c", "payload": {"email": "bob.smith@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.068851+00:00", "eventType": "candidate.share", "actorId": "cand-9b64a03c", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.069070+00:00", "eventType": "candidate.created", "actorId": "cand-3ac8c269", "payload": {"email": "carol.white@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.069237+00:00", "eventType": "candidate.share", "actorId": "cand-3ac8c269", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.069450+00:00", "eventType": "candidate.created", "actorId": "cand-06dd68ac", "payload": {"email": "david.lee@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.069609+00:00", "eventType": "candidate.share", "actorId": "cand-06dd68ac", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.069835+00:00", "eventType": "candidate.created", "actorId": "cand-ac0c92d9", "payload": {"email": "emma.d@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.070010+00:00", "eventType": "candidate.share", "actorId": "cand-ac0c92d9", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.070305+00:00", "eventType": "candidate.created", "actorId": "cand-e0ff8a11", "payload": {"email": "frank.chen@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.070467+00:00", "eventType": "candidate.share", "actorId": "cand-e0ff8a11", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.070684+00:00", "eventType": "candidate.created", "actorId": "cand-78874501", "payload": {"email": "grace.park@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.070834+00:00", "eventType": "candidate.share", "actorId": "cand-78874501", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.071047+00:00", "eventType": "candidate.created", "actorId": "cand-0f1e4939", "payload": {"email": "henry.b@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.071224+00:00", "eventType": "candidate.share", "actorId": "cand-0f1e4939", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.071477+00:00", "eventType": "candidate.created", "actorId": "cand-240cf3bd", "payload": {"email": "iris.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.071630+00:00", "eventType": "candidate.share", "actorId": "cand-240cf3bd", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.071849+00:00", "eventType": "candidate.created", "actorId": "cand-81ec0af1", "payload": {"email": "jack.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.071992+00:00", "eventType": "candidate.share", "actorId": "cand-81ec0af1", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.072204+00:00", "eventType": "candidate.created", "actorId": "cand-fa302e76", "payload": {"email": "kelly.a@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.072366+00:00", "eventType": "candidate.share", "actorId": "cand-fa302e76", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.072598+00:00", "eventType": "candidate.created", "actorId": "cand-0efc3259", "payload": {"email": "liam.w@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.072741+00:00", "eventType": "candidate.share", "actorId": "cand-0efc3259", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.072983+00:00", "eventType": "candidate.created", "actorId": "cand-83ad95d8", "payload": {"email": "maya.p@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.073145+00:00", "eventType": "candidate.share", "actorId": "cand-83ad95d8", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.073395+00:00", "eventType": "candidate.created", "actorId": "cand-416fc969", "payload": {"email": "noah.g@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.073570+00:00", "eventType": "candidate.share", "actorId": "cand-416fc969", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.073795+00:00", "eventType": "candidate.created", "actorId": "cand-9c9cf789", "payload": {"email": "olivia.r@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.073945+00:00", "eventType": "candidate.share", "actorId": "cand-9c9cf789", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.074172+00:00", "eventType": "candidate.created", "actorId": "cand-4851d1f2", "payload": {"email": "paul.k@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.074325+00:00", "eventType": "candidate.share", "actorId": "cand-4851d1f2", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.074581+00:00", "eventType": "candidate.created", "actorId": "cand-fa8a0c17", "payload": {"email": "quinn.m@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.074784+00:00", "eventType": "candidate.share", "actorId": "cand-fa8a0c17", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.075055+00:00", "eventType": "candidate.created", "actorId": "cand-cf84da94", "payload": {"email": "rachel.t@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.075211+00:00", "eventType": "candidate.share", "actorId": "cand-cf84da94", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.075443+00:00", "eventType": "candidate.created", "actorId": "cand-f5f49092", "payload": {"email": "sam.j@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.075627+00:00", "eventType": "candidate.share", "actorId": "cand-f5f49092", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.075871+00:00", "eventType": "candidate.created", "actorId": "cand-5dac5c63", "payload": {"email": "tina.z@email.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:28:18.076021+00:00", "eventType": "candidate.share", "actorId": "cand-5dac5c63", "payload": {"employerId": "emp-demo-test"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:30:21.164827+00:00", "eventType": "job.upserted", "actorId": "emp-demo-test", "payload": {"jobId": "data-analyst"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:30:22.757644+00:00", "eventType": "job.filter_run", "actorId": "emp-demo-test", "payload": {"jobId": "data-analyst", "resultCount": "18"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:08.285476+00:00", "eventType": "candidate.created", "actorId": "cand-14b70cfc", "payload": {"email": "PaulC@gmail.com"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:09.383368+00:00", "eventType": "session.created", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "trackId": "python_core_v1"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:09.386694+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-medium-1", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:11.680596+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-medium-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:11.682636+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-1", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:13.000439+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:13.004766+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-2", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:13.694663+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-2", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:13.701051+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-3", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:14.486448+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-3", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:14.492706+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-4", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:14.939648+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-4", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:14.944741+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-5", "band": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:15.330443+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-easy-5", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:15.334719+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-medium-2", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:15.883901+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-medium-2", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:15.889567+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-medium-3", "band": "medium"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:18.524421+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-medium-3", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:18.530220+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-hard-1", "band": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:20.144180+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-hard-1", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:20.149227+00:00", "eventType": "session.question_assigned", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-hard-2", "band": "hard"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:20.873377+00:00", "eventType": "session.response_recorded", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "questionId": "py-hard-2", "correct": "False", "nextBand": "easy"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:20.879831+00:00", "eventType": "session.scored", "actorId": "cand-14b70cfc", "payload": {"sessionId": "sess-a87d8ef0", "overall": "0", "percentile": "50"}, "ruleCompliance": "R-LOG-01"}
+{"timestamp": "2025-12-02T19:31:35.653367+00:00", "eventType": "candidate.share", "actorId": "cand-14b70cfc", "payload": {"employerId": "fff"}, "ruleCompliance": "R-LOG-01"}

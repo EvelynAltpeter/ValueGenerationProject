@@ -64,10 +64,26 @@ function CandidateDashboard() {
   async function fetchQuestion(sessionId = session?.id) {
     if (!sessionId) return
     setLoading(true)
+    setError('')
     
     try {
       const res = await fetch(`${API_BASE}/api/tests/${sessionId}/next`)
+      
+      if (!res.ok) {
+        // No more questions - this is normal at the end of a test
+        setStatusMsg('All questions completed. Calculating score...')
+        await submitSession()
+        return
+      }
+      
       const data = await res.json()
+      
+      if (!data.data || !data.data.question) {
+        setStatusMsg('All questions completed. Calculating score...')
+        await submitSession()
+        return
+      }
+      
       setQuestionBlock(data.data)
       
       if (data.data.question.options?.length) {
@@ -76,7 +92,13 @@ function CandidateDashboard() {
       
       setStatusMsg('')
     } catch (err) {
-      setError('Unable to fetch question. You may have completed all questions.')
+      // If we can't fetch more questions, try to submit the session
+      if (session) {
+        setStatusMsg('All questions completed. Calculating score...')
+        await submitSession()
+      } else {
+        setError('Unable to fetch question. Please try again.')
+      }
     } finally {
       setLoading(false)
     }
@@ -87,6 +109,7 @@ function CandidateDashboard() {
     
     const isCoding = questionBlock.question.questionType === 'coding'
     setLoading(true)
+    setError('')
     
     try {
       await fetch(`${API_BASE}/api/tests/${session.id}/responses`, {
@@ -102,12 +125,29 @@ function CandidateDashboard() {
         }),
       })
       
-      setStatusMsg('Response recorded!')
       setAnswer('')
       setCode('')
-      await fetchQuestion()
+      
+      // Try to fetch next question
+      try {
+        const nextRes = await fetch(`${API_BASE}/api/tests/${session.id}/next`)
+        if (nextRes.ok) {
+          const nextData = await nextRes.json()
+          setQuestionBlock(nextData.data)
+          setStatusMsg('Responses Recorded!')
+        } else {
+          // No more questions - automatically submit the test
+          setStatusMsg('All responses recorded! Calculating score...')
+          await submitSession()
+        }
+      } catch (nextErr) {
+        // No more questions - automatically submit the test
+        setStatusMsg('All responses recorded! Calculating score...')
+        await submitSession()
+      }
     } catch (err) {
       setError('Submission failed. Please retry.')
+      setStatusMsg('')
     } finally {
       setLoading(false)
     }
@@ -116,19 +156,35 @@ function CandidateDashboard() {
   async function submitSession() {
     if (!session) return
     setLoading(true)
-    setStatusMsg('Scoring your test...')
+    setError('')
+    
+    // Only show scoring message if not already shown
+    if (!statusMsg.includes('Calculating')) {
+      setStatusMsg('Scoring your test...')
+    }
     
     try {
       const res = await fetch(`${API_BASE}/api/tests/${session.id}/submit`, {
         method: 'POST',
       })
+      
+      if (!res.ok) {
+        throw new Error('Failed to submit test')
+      }
+      
       const data = await res.json()
+      
+      if (!data.data) {
+        throw new Error('Invalid response from server')
+      }
+      
       setReport(data.data)
       setQuestionBlock(null)
       setSession(null)
-      setStatusMsg('Test complete!')
+      setStatusMsg(`✅ Test Complete! Your score: ${data.data.overallScore}/100 (${data.data.percentile}th percentile)`)
     } catch (err) {
-      setError('Unable to finalize test.')
+      setError('Unable to finalize test. Please try again.')
+      setStatusMsg('')
     } finally {
       setLoading(false)
     }
@@ -273,10 +329,10 @@ function CandidateDashboard() {
           </div>
         )}
 
-        {/* Score Report */}
+        {/* Score Report - Show immediately when available */}
         {report && (
           <>
-            <div className="score-display">
+            <div className="score-display" style={{ marginTop: '24px' }}>
               <div className="score-main">{report.overallScore}</div>
               <div className="score-label">Overall Score</div>
               

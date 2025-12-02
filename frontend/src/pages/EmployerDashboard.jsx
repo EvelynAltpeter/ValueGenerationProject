@@ -48,13 +48,19 @@ function EmployerDashboard() {
         employerId: employerId,
         requiredTracks: [jobConfig.trackId],
         minScores: { [jobConfig.trackId]: Number(jobConfig.minScore) },
+        preferredExperienceYears: 0,
       }
       
-      await fetch(`${API_BASE}/api/employers/${employerId}/jobs`, {
+      const res = await fetch(`${API_BASE}/api/employers/${employerId}/jobs`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requirement),
       })
+      
+      if (!res.ok) {
+        const errorData = await res.json()
+        throw new Error(errorData.detail || 'Failed to create job')
+      }
       
       setStatusMsg('✓ Job requirements saved successfully!')
       setJobs([...jobs, requirement])
@@ -75,11 +81,30 @@ function EmployerDashboard() {
       const res = await fetch(
         `${API_BASE}/api/employers/${employerId}/jobs/${jobId}/eligible`
       )
+      
+      if (!res.ok) {
+        const errorData = await res.json()
+        throw new Error(errorData.detail || `HTTP ${res.status}: ${res.statusText}`)
+      }
+      
       const data = await res.json()
+      
+      if (!data.data) {
+        throw new Error('Invalid response from server')
+      }
+      
       setEligible(data.data.eligibleCandidates ?? [])
-      setStatusMsg(`Found ${data.data.eligibleCandidates?.length ?? 0} eligible candidates`)
+      
+      const count = data.data.eligibleCandidates?.length ?? 0
+      if (count === 0) {
+        setStatusMsg('No eligible candidates found. Make sure candidates have shared their scores with you.')
+      } else {
+        setStatusMsg(`Found ${count} eligible candidate${count === 1 ? '' : 's'}`)
+      }
     } catch (err) {
-      setError('Unable to fetch eligible candidates.')
+      console.error('Error fetching eligible candidates:', err)
+      setError(err.message || 'Unable to fetch eligible candidates. Make sure the job exists and candidates have shared their scores.')
+      setStatusMsg('')
     } finally {
       setLoading(false)
     }

@@ -1,0 +1,107 @@
+[
+  {
+    "questionId": "js-easy-1",
+    "trackId": "javascript_core_v1",
+    "prompt": "Which keyword is used to declare a variable in JavaScript (ES6+)?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "All of the above"
+    ],
+    "answerKey": "All of the above",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "js-easy-2",
+    "trackId": "javascript_core_v1",
+    "prompt": "What is the result of `typeof null` in JavaScript?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "null",
+      "object",
+      "undefined",
+      "boolean"
+    ],
+    "answerKey": "object",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "js-easy-3",
+    "trackId": "javascript_core_v1",
+    "prompt": "Which method is used to add an element to the end of an array?",
+    "questionType": "mcq",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "arrays"
+    ],
+    "subskill": "data_structures",
+    "options": [
+      "push()",
+      "append()",
+      "add()",
+      "insert()"
+    ],
+    "answerKey": "push()",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "js-medium-1",
+    "trackId": "javascript_core_v1",
+    "prompt": "What is a closure in JavaScript?",
+    "questionType": "mcq",
+    "difficulty": "medium",
+    "tags": [
+      "closures"
+    ],
+    "subskill": "algorithms",
+    "options": [
+      "A function that has access to variables in its outer scope",
+      "A way to close a function",
+      "A method to terminate execution",
+      "A type of loop"
+    ],
+    "answerKey": "A function that has access to variables in its outer scope",
+    "timeLimitSeconds": 120
+  },
+  {
+    "questionId": "js-medium-2",
+    "trackId": "javascript_core_v1",
+    "prompt": "Implement a function `reverseArray(arr)` that returns a new array with elements in reverse order.",
+    "questionType": "coding",
+    "difficulty": "medium",
+    "tags": [
+      "arrays",
+      "algorithms"
+    ],
+    "subskill": "algorithms",
+    "referenceSolution": "function reverseArray(arr) {\n  return arr.slice().reverse();\n}",
+    "timeLimitSeconds": 300
+  },
+  {
+    "questionId": "js-hard-1",
+    "trackId": "javascript_core_v1",
+    "prompt": "Implement a debounce function that delays function execution until after wait time has passed since the last invocation.",
+    "questionType": "coding",
+    "difficulty": "hard",
+    "tags": [
+      "functions",
+      "async"
+    ],
+    "subskill": "code_quality",
+    "referenceSolution": "function debounce(func, wait) {\n  let timeout;\n  return function(...args) {\n    clearTimeout(timeout);\n    timeout = setTimeout(() => func.apply(this, args), wait);\n  };\n}",
+    "timeLimitSeconds": 600
+  }
+]
