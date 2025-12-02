@@ -116,18 +116,27 @@ function EmployerDashboard() {
     return 'var(--color-warning)'
   }
 
+  function returnHome() {
+    navigate('/')
+  }
+
   if (!employerId) return null
 
   return (
     <main className="main-content">
       <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
         {/* Header */}
-        <div style={{ marginBottom: '32px' }}>
-          <h1>{employerName}</h1>
-          <p className="text-muted">Employer Dashboard</p>
-          <div className="badge" style={{ marginTop: '8px' }}>
-            Employer ID: {employerId}
+        <div style={{ marginBottom: '32px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+          <div>
+            <h1>{employerName}</h1>
+            <p className="text-muted">Employer Dashboard</p>
+            <div className="badge" style={{ marginTop: '8px' }}>
+              Employer ID: {employerId}
+            </div>
           </div>
+          <button className="btn btn-secondary btn-small" onClick={returnHome}>
+            ← Home
+          </button>
         </div>
 
         {/* Status Messages */}

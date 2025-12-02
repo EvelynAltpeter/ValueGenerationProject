@@ -228,15 +228,33 @@ function CandidateDashboard() {
     return 'timer'
   }
 
+  function returnHome() {
+    navigate('/')
+  }
+
+  function takeAnotherTest() {
+    setSession(null)
+    setQuestionBlock(null)
+    setReport(null)
+    setMatches([])
+    setStatusMsg('')
+    setError('')
+  }
+
   if (!candidateId) return null
 
   return (
     <main className="main-content">
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         {/* Header */}
-        <div style={{ marginBottom: '32px' }}>
-          <h1>Welcome, {candidateName}</h1>
-          <p className="text-muted">Your Technical Proficiency Dashboard</p>
+        <div style={{ marginBottom: '32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div>
+            <h1>Welcome, {candidateName}</h1>
+            <p className="text-muted">Your Technical Proficiency Dashboard</p>
+          </div>
+          <button className="btn btn-secondary btn-small" onClick={returnHome}>
+            ← Home
+          </button>
         </div>
 
         {/* Status Messages */}
@@ -254,15 +272,57 @@ function CandidateDashboard() {
               <h3 className="card-title">Select Skill Track</h3>
             </div>
             <p className="text-muted">Choose a standardized test to begin. Each session lasts 30 minutes.</p>
-            <div className="btn-group">
-              <button className="btn" onClick={() => startTrack('python_core_v1')}>
-                🐍 Python Core
+            
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
+              gap: '16px',
+              marginTop: '24px'
+            }}>
+              <button 
+                className="btn" 
+                onClick={() => startTrack('python_core_v1')}
+                style={{ 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  alignItems: 'center',
+                  padding: '24px',
+                  height: 'auto'
+                }}
+              >
+                <span style={{ fontSize: '36px', marginBottom: '8px' }}>🐍</span>
+                <strong>Python Core</strong>
+                <span style={{ fontSize: '13px', marginTop: '4px', opacity: 0.8 }}>52 questions</span>
               </button>
-              <button className="btn btn-secondary" onClick={() => startTrack('sql_core_v1')}>
-                💾 SQL Core
+              <button 
+                className="btn btn-secondary" 
+                onClick={() => startTrack('sql_core_v1')}
+                style={{ 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  alignItems: 'center',
+                  padding: '24px',
+                  height: 'auto'
+                }}
+              >
+                <span style={{ fontSize: '36px', marginBottom: '8px' }}>💾</span>
+                <strong>SQL Core</strong>
+                <span style={{ fontSize: '13px', marginTop: '4px', opacity: 0.8 }}>10 questions</span>
               </button>
-              <button className="btn btn-secondary" onClick={() => startTrack('javascript_core_v1')}>
-                ⚡ JavaScript Core
+              <button 
+                className="btn btn-secondary" 
+                onClick={() => startTrack('javascript_core_v1')}
+                style={{ 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  alignItems: 'center',
+                  padding: '24px',
+                  height: 'auto'
+                }}
+              >
+                <span style={{ fontSize: '36px', marginBottom: '8px' }}>⚡</span>
+                <strong>JavaScript Core</strong>
+                <span style={{ fontSize: '13px', marginTop: '4px', opacity: 0.8 }}>31 questions</span>
               </button>
             </div>
           </div>
@@ -408,11 +468,17 @@ function CandidateDashboard() {
 
             <div className="card">
               <div className="card-header">
-                <h3 className="card-title">Recommended Jobs</h3>
+                <h3 className="card-title">What's Next?</h3>
               </div>
-              <button className="btn btn-secondary" onClick={fetchMatches}>
-                Find Matching Opportunities
-              </button>
+              
+              <div className="btn-group">
+                <button className="btn" onClick={takeAnotherTest}>
+                  📝 Take Another Test
+                </button>
+                <button className="btn btn-secondary" onClick={fetchMatches}>
+                  🔍 Find Matching Jobs
+                </button>
+              </div>
 
               {matches.length > 0 && (
                 <div style={{ marginTop: '24px' }}>
